@@ -8,7 +8,7 @@
 </head>
 <body>
     <div>
-        <h1>Cadastro de Pessoa</h1>
+        <h1>Cadastro de Funcionário</h1>
     </div> 
     <form action="cad_Funcionariobd.php" method="POST">
         <fieldset>
