@@ -111,44 +111,41 @@
             </div>
 
             <div class="col-sm-6">
-              <label for="firstName" class="form-label">Data de Nascimento</label>
-              <input type="date" class="form-control" id="firstName" placeholder="" value="" required>
+              <label for="nascimento" class="form-label">Data de Nascimento</label>
+              <input type="date" class="form-control" id="nascimento" name="nascimento" value="" required>
               <div class="invalid-feedback">
-                Valid first name is required.
+                Favor inserir a data de nascimento.
               </div>
             </div>
 
             <div class="col-sm-6">
-              <label for="firstName" class="form-label">Sexo</label>
-              <select class="form-select" aria-label="Default select example">
+              <label for="genero" class="form-label">Sexo</label>
+              <select class="form-select" id="genero" name="genero" aria-label="Default select example">
                 <option selected>Selecione</option>
-                <option value="1">Masculino</option>
-                <option value="2">Feminino</option>
-                <option value="3">Outros</option>
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+                <option value="O">Outros</option>
               </select>  
             </div>
 
             <div class="col-sm-6">
-              <label for="firstName" class="form-label">Telefone</label>
-              <input type="tel" class="form-control" id="firstName" placeholder="" value="" required>
-              <div class="invalid-feedback">
-                Valid first name is required.
-              </div>
+              <label for="telefone" class="form-label">Telefone</label>
+              <input type="tel" class="form-control" id="telefone" name="telefone" value="">
             </div>
 
             <div class="col-sm-6">
-              <label for="firstName" class="form-label">Celular</label>
-              <input type="tel" class="form-control" id="firstName" placeholder="" value="" required>
+              <label for="celular" class="form-label">Celular</label>
+              <input type="tel" class="form-control" id="celular" name="celular" value="" required>
               <div class="invalid-feedback">
-                Valid first name is required.
+              Favor inserir a celular.
               </div>
             </div>
 
             <div class="col-12">
               <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
-              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com">
               <div class="invalid-feedback">
-                Please enter a valid email address for shipping updates.
+                Insira um endereço de e-mail válido.
               </div>
             </div>
 
@@ -156,67 +153,77 @@
             <hr class="my-4">
 
             <div class="col-12">
-              <label for="address" class="form-label">Logradouro</label>
-              <input type="text" class="form-control" id="address" placeholder="" required>
+              <label for="logradouro" class="form-label">Logradouro</label>
+              <input type="text" class="form-control" id="logradouro" name="logradouro" required>
               <div class="invalid-feedback">
-                Please enter your shipping address.
+                Favor inserir o endereço.
               </div>
             </div>            
 
             <div class="col-3">
-              <label for="address2" class="form-label">Número</label>
-              <input type="text" class="form-control" id="address2" placeholder="">
+              <label for="lognum" class="form-label">Número</label>
+              <input type="text" class="form-control" id="lognum" name="lognum" required>
+              <div class="invalid-feedback">
+                Favor inserir o número residencial.
+              </div>
             </div>
 
             <div class="col-9">
-              <label for="address2" class="form-label">Bairro</label>
-              <input type="text" class="form-control" id="address2" placeholder="">
+              <label for="bairro" class="form-label">Bairro</label>
+              <input type="text" class="form-control" id="bairro" name="bairro"required>
+              <div class="invalid-feedback">
+                Favor inserir o bairro.
+              </div>
             </div>
 
             
             <div class="col-8">
-              <label for="address2" class="form-label">Cidade</label>
-              <input type="text" class="form-control" id="address2" placeholder="">
-            </div>
-
-            <div class="col-4">
-              <label for="state" class="form-label">State</label>
-              <select class="form-select" id="state" required>
-                <option>São Paulo (SP)</option>
-                <option>Acre (AC)</option>
-                <option>Alagoas (AL)</option>
-                <option>Amapá (AP)</option>
-                <option>Amazonas (AM)</option>
-                <option>Bahia (BA)</option>
-                <option>Distrito Federal (DF)</option>
-                <option>Espírito Santo (ES)
-                <option>Goiás (GO)</option>
-                <option>Maranhão (MA)</option>
-                <option>Mato Grosso (MT)</option>
-                <option>Mato Grosso do Sul (MS)</option>
-                <option>Minas Gerais (MG)</option>
-                <option>Pará (PA)</option>
-                <option>Paraíba (PB)</option>
-                <option>Paraná (PR)</option>
-                <option>Pernambuco (PE)</option>
-                <option>Piauí (PI)</option>
-                <option>Rio de Janeiro (RJ)</option>
-                <option>Rio Grande do Norte (RN)</option>
-                <option>Rio Grande do Sul (RS)</option>
-                <option>Rondônia (RO)</option>
-                <option>Roraima (RR)</option>
-                <option>Santa Catarina (SC)</option>                
-                <option>Sergipe (SE)</option>
-                <option>Tocantins (TO)</option>
-              </select>
+              <label for="municipio" class="form-label">Município</label>
+              <input type="text" class="form-control" id="municipio" name="municipio" required>
               <div class="invalid-feedback">
-                Please provide a valid state.
+                Favor inserir o município.
               </div>
             </div>
 
+            <div class="col-4">
+              <label for="estado" class="form-label">Estado</label>
+              <select class="form-select" id="estado" name="estado" required>
+               <option selected>Selecione</option>
+                <option value="SP">São Paulo</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>                
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+              </select>            
+            </div>
+
             <div class="col-8">
-              <label for="address2" class="form-label">Pais</label>
-              <input type="text" class="form-control" id="address2" placeholder="">
+              <label for="pais" class="form-label">Pais</label>
+              <input type="text" class="form-control" id="pais" name="pais" required>
+              <div class="invalid-feedback">
+                Favor inserir o país.
+              </div>
             </div>
 
           <hr class="my-4">
@@ -233,7 +240,7 @@
 
           <hr class="my-4">
 
-          <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Salvar</button>
         </form>
       </div>
     </div>
