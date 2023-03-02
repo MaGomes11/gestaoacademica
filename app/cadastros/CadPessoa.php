@@ -83,9 +83,16 @@
 
         <h4 class="mb-3">Dados Pessoais</h4>
         <hr class="my-4">
+                    
 
         <form class="needs-validation" novalidate> <!-- action="cad_Pessoabd.php" method="POST -->
           <div class="row g-3">
+
+          <div class="col-sm-6">
+              <label for="codigo" class="form-label">Código</label>
+              <input type="text" class="form-control" id="codigo" name ="codigo" value="">
+            </div>
+            
             <div class="col-sm-12">
               <label for="nome" class="form-label">Nome</label>
               <input type="text" class="form-control" id="nome" name ="nome" value="" required>
