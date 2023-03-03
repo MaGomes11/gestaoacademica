@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.108.0">
-    <title>Cadastro de Funcionário</title>
+    <title>Cadastro de Formação</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/checkout/">
     <link href="../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -75,48 +75,49 @@
   <main>
     <div class="py-5 text-center">
       <img class="d-block mx-auto mb-4" src="../../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-      <h2>Cadastro de Funcionário</h2>
+      <h2>Cadastro de Formação</h2>
     </div>
 
     <div class="row g-5">     
       <div class="col-md-7 col-lg-8">
 
-        <h4 class="mb-3">Dados Pessoais</h4>
+        <h6 class="mb-3">Dados Formação</h6>
         <hr class="my-4">
                     
 
         <form class="needs-validation" novalidate> <!-- action="cad_Pessoabd.php" method="POST -->
           <div class="row g-3">
 
-          <div class="col-sm-6">
+          <div class="col-sm-3">
               <label for="codigo" class="form-label">Código</label>
               <input type="text" class="form-control" id="codigo" name ="codigo" value="">
             </div>
-  
-            <div class="col-sm-4">
-              <label for="codigo_pes" class="form-label">Código Pessoa</label>
-              <input type="text" class="form-control" id="codigo_pes" name ="codigo_pes" value="">
+            
+            <div class="col-sm-9">
+              <label for="descForm" class="form-label">Descrição da Formação</label>
+              <input type="text" class="form-control" id="descForm" name ="descForm" value="" required>
+              <div class="invalid-feedback">
+                Favor inserir a Descrição da Formação.
+              </div>
             </div>
 
-            <div class="col-sm-8">
-              <label for="nome_pes" class="form-label">Nome Pessoa</label>
-              <input type="text" class="form-control" id="nome_pes" name ="nome_pes" value="">
-            </div>            
+            <h6 class="mb-3">Dados Especialização</h6>
 
-            <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="prof">
-            <label class="form-check-label" for="save-info">Professor</label>
-          </div>
-
-            <div class="col-sm-6">
-              <label for="login" class="form-label">Login</label>
-              <input type="text" class="form-control" id="login" name="login" value="">
+            <div class="col-sm-3">
+              <label for="codEsp" class="form-label">Código</label>
+              <input type="text" class="form-control" id="codEsp" name="codEsp" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Favor inserir o código.
+              </div>
             </div>
 
-            <div class="col-sm-6">
-              <label for="senha" class="form-label">Senha</label>
-              <input type="text" class="form-control" id="senha" name="senha" value="" required>     
-            </div>                            
+            <div class="col-sm-9">
+              <label for="descEsp" class="form-label">Descrição da Especialização</label>
+              <input type="text" class="form-control" id="descEsp" name="descEsp" value="" required>
+              <div class="invalid-feedback">
+                Favor inserir a Descrição da Especialização.
+              </div>
+            </div>                   
 
           <hr class="my-4">
 

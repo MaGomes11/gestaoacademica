@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.108.0">
-    <title>Sidebars · Bootstrap v5.3</title>
+    <title>Home</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sidebars/">
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -130,12 +130,12 @@
 </svg>
 
 <main class="d-flex flex-nowrap">
-  <h1 class="visually-hidden">Sidebars examples</h1>
+  <h1 class="visually-hidden">Home</h1>
 
   <div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
     <a href="#" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
       <svg class="bi pe-none me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-      <span class="fs-5 fw-semibold">Collapsible</span>
+      <span class="fs-5 fw-semibold">Gestor Acadêmico</span>
     </a>
     <ul class="list-unstyled ps-0">
       <li class="mb-1">
@@ -145,9 +145,9 @@
         <div class="collapse show" id="home-collapse">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
             <li><a href="/app/cadastros/CadPessoa.php" class="link-dark d-inline-flex text-decoration-none rounded">Pessoa</a></li>
-            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Updates</a></li>
-            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Reports</a></li>
-            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Reports</a></li>
+            <li><a href="/app/cadastros/CadFuncionario.php" class="link-dark d-inline-flex text-decoration-none rounded">Funcionário</a></li>
+            <li><a href="/app/cadastros/CadFormacao.php" class="link-dark d-inline-flex text-decoration-none rounded">Formação</a></li>
+            <li><a href="/app/cadastros/CadEspecializacao.php" class="link-dark d-inline-flex text-decoration-none rounded">Especialização</a></li>
           </ul>
         </div>
       </li>
