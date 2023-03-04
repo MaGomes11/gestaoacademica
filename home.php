@@ -153,12 +153,13 @@
       </li>
       <li class="mb-1">
         <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-          Dashboard
+          Matricula
         </button>
         <div class="collapse" id="dashboard-collapse">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Overview</a></li>
-            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Weekly</a></li>
+            <li><a href="./app/cadastros/CadSemestre.php" class="link-dark d-inline-flex text-decoration-none rounded">Matricula</a></li>
+            <li><a href="./app/cadastros/CadSemestre.php" class="link-dark d-inline-flex text-decoration-none rounded">Semestre</a></li>
+            <li><a href="./app/cadastros/CadCurso.php" class="link-dark d-inline-flex text-decoration-none rounded">Curso</a></li>
             <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Monthly</a></li>
             <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Annually</a></li>
           </ul>
@@ -195,9 +196,8 @@
   </div>
 
   <div class="b-example-divider b-example-vr"></div>
+  
 </main>
-
-
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 
       <script src="sidebars.js"></script>

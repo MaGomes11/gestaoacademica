@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.108.0">
-    <title>Cadastro de Especialização</title>
+    <title>Cadastro de Curso</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/checkout/">
     <link href="../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -75,32 +75,48 @@
   <main>
     <div class="py-5 text-center">
       <img class="d-block mx-auto mb-4" src="../../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-      <h2>Cadastro de Especialização</h2>
+      <h2>Cadastro de Curso</h2>
     </div>
 
     <div class="row g-5">     
       <div class="col-md-7 col-lg-8">
 
-        <h6 class="mb-3">Dados Formação</h6>
+        <h6 class="mb-3">Dados do Curso</h6>
         <hr class="my-4">
                     
 
         <form class="needs-validation" novalidate> <!-- action="cad_Pessoabd.php" method="POST -->
           <div class="row g-3">
 
-          <div class="col-sm-3">
+            <div class="col-sm-3">
               <label for="codigo" class="form-label">Código</label>
               <input type="text" class="form-control" id="codigo" name ="codigo" value="" disabled> 
             </div>
             
-            <div class="col-sm-9">
-              <label for="descricao" class="form-label">Descrição da Especialização</label>
+            <div class="col-sm-4">
+              <label for="duracao" class="form-label">Duração do Curso</label>
+              <input type="text" class="form-control" id="duracao" name ="descduracaoricao" value="" required>
+              <div class="invalid-feedback">
+                Favor inserir a Duração do Curso.
+              </div>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" checked>
+              <label class="form-check-label" for="flexCheckIndeterminate">
+                Ativo
+              </label>
+            </div>
+
+            <div class="col-sm-12">
+              <label for="descricao" class="form-label">Descrição do Curso</label>
               <input type="text" class="form-control" id="descricao" name ="descricao" value="" required>
               <div class="invalid-feedback">
-                Favor inserir a Descrição da Especialização.
+                Favor inserir a Descrição do Curso.
               </div>
             </div>                               
 
+             
           <hr class="my-4">
 
           <div class="d-grid gap-2 d-md-block">

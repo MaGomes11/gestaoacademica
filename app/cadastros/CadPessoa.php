@@ -85,7 +85,7 @@
         <hr class="my-4">
                     
 
-        <form class="needs-validation" novalidate> <!-- action="cad_Pessoabd.php" method="POST -->
+        <form action="cad_Pessoabd.php" method="POST" class="needs-validation" novalidate> <!-- action="cad_Pessoabd.php" method="POST -->
           <div class="row g-3">
 
           <div class="col-sm-4">
@@ -265,7 +265,7 @@
   </main>
 
   <footer class="my-5 pt-5 text-muted text-center text-small">
-    <p class="mb-1">&copy; 2017–2022 Company Name</p>
+    <p class="mb-1">&copy; 2022–2023 Company Gestor Acadêmico</p>
     <ul class="list-inline">
       <li class="list-inline-item"><a href="#">Privacy</a></li>
       <li class="list-inline-item"><a href="#">Terms</a></li>
