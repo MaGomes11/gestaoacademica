@@ -144,10 +144,10 @@
           </button>
         <div class="collapse show" id="home-collapse">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li><a href="/app/cadastros/CadPessoa.php" class="link-dark d-inline-flex text-decoration-none rounded">Pessoa</a></li>
-            <li><a href="/app/cadastros/CadFuncionario.php" class="link-dark d-inline-flex text-decoration-none rounded">Funcionário</a></li>
-            <li><a href="/app/cadastros/CadFormacao.php" class="link-dark d-inline-flex text-decoration-none rounded">Formação</a></li>
-            <li><a href="/app/cadastros/CadEspecializacao.php" class="link-dark d-inline-flex text-decoration-none rounded">Especialização</a></li>
+            <li><a href="./app/cadastros/CadPessoa.php" class="link-dark d-inline-flex text-decoration-none rounded">Pessoa</a></li>
+            <li><a href="./app/cadastros/CadFuncionario.php" class="link-dark d-inline-flex text-decoration-none rounded">Funcionário</a></li>
+            <li><a href="./app/cadastros/CadFormacao.php" class="link-dark d-inline-flex text-decoration-none rounded">Formação</a></li>
+            <li><a href="./app/cadastros/CadEspecializacao.php" class="link-dark d-inline-flex text-decoration-none rounded">Especialização</a></li>
           </ul>
         </div>
       </li>

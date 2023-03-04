@@ -90,7 +90,7 @@
 
           <div class="col-sm-6">
               <label for="codigo" class="form-label">Código</label>
-              <input type="text" class="form-control" id="codigo" name ="codigo" value="">
+              <input type="text" class="form-control" id="codigo" name ="codigo" value="" disabled>
             </div>
   
             <div class="col-sm-4">
@@ -120,7 +120,11 @@
 
           <hr class="my-4">
 
-          <button class="w-100 btn btn-primary btn-lg" type="submit">Salvar</button>
+          <div class="d-grid gap-2 d-md-block">
+            <button class="btn btn-primary col-sm-4" type="submit">Salvar</button>
+            <button class="btn btn-primary col-sm-4" type="reset">Limpar</button>
+          </div>
+
         </form>
       </div>
     </div>

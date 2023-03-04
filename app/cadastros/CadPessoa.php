@@ -88,9 +88,9 @@
         <form class="needs-validation" novalidate> <!-- action="cad_Pessoabd.php" method="POST -->
           <div class="row g-3">
 
-          <div class="col-sm-6">
-              <label for="codigo" class="form-label">Código</label>
-              <input type="text" class="form-control" id="codigo" name ="codigo" value="">
+          <div class="col-sm-4">
+              <label for="codigo" class="form-label ">Código</label>
+              <input type="text" class="form-control" id="codigo" name ="codigo" value="" disabled>
             </div>
             
             <div class="col-sm-12">
@@ -183,6 +183,13 @@
               </div>
             </div>
 
+            <div class="col-4">
+              <label for="cep" class="form-label">Cep</label>
+              <input type="text" class="form-control" id="cep" name="cep"required>
+              <div class="invalid-feedback">
+                Favor inserir o bairro.
+              </div>
+            </div>
             
             <div class="col-8">
               <label for="municipio" class="form-label">Município</label>
@@ -247,7 +254,11 @@
 
           <hr class="my-4">
 
-          <button class="w-100 btn btn-primary btn-lg" type="submit">Salvar</button>
+          <div class="d-grid gap-2 d-md-block">
+            <button class="btn btn-primary col-sm-4" type="submit">Salvar</button>
+            <button class="btn btn-primary col-sm-4" type="reset">Limpar</button>
+          </div>
+
         </form>
       </div>
     </div>
