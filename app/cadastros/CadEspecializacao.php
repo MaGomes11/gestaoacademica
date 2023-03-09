@@ -73,9 +73,20 @@
     
 <div class="container">
   <main>
-    <div class="py-5 text-center">
+    <div class="py-5 text-center col-sm-8">
       <img class="d-block mx-auto mb-4" src="../../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
       <h2>Cadastro de Especialização</h2>
+    </div>
+
+    <div class="row col-sm-8"> 
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Cadastrar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Vizualizar</a>
+        </li>
+      </ul>
     </div>
 
     <div class="row g-5">     
@@ -85,7 +96,7 @@
         <hr class="my-4">
                     
 
-        <form class="needs-validation" novalidate> <!-- action="cad_Pessoabd.php" method="POST -->
+        <form action="cadEspecializacaobd.php" method="POST" class="needs-validation" novalidate> 
           <div class="row g-3">
 
           <div class="col-sm-3">
@@ -94,8 +105,8 @@
             </div>
             
             <div class="col-sm-9">
-              <label for="descricao" class="form-label">Descrição da Especialização</label>
-              <input type="text" class="form-control" id="descricao" name ="descricao" value="" required>
+              <label for="Espc_a_descricao" class="form-label">Descrição da Especialização</label>
+              <input type="text" class="form-control" id="esp_descricao" name ="esp_descricao" value="" required>
               <div class="invalid-feedback">
                 Favor inserir a Descrição da Especialização.
               </div>

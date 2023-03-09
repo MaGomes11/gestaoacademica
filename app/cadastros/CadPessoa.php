@@ -85,7 +85,7 @@
         <hr class="my-4">
                     
 
-        <form action="cad_Pessoabd.php" method="POST" class="needs-validation" novalidate> <!-- action="cad_Pessoabd.php" method="POST -->
+        <form action="CadPessoabd.php" method="POST" class="needs-validation" novalidate> <!-- action="cad_Pessoabd.php" method="POST -->
           <div class="row g-3">
 
           <div class="col-sm-4">
@@ -95,7 +95,7 @@
             
             <div class="col-sm-12">
               <label for="nome" class="form-label">Nome</label>
-              <input type="text" class="form-control" id="nome" name ="nome" value="" required>
+              <input type="text" class="form-control" id="pess_nome" name ="pess_nome" value="" required>
               <div class="invalid-feedback">
                 Favor inserir o nome.
               </div>
@@ -103,7 +103,7 @@
 
             <div class="col-sm-6">
               <label for="cpf" class="form-label">CPF</label>
-              <input type="text" class="form-control" id="cpf" name="cpf" placeholder="" value="" required>
+              <input type="text" class="form-control" id="pess_cpf" name="pess_cpf" placeholder="" value="" required>
               <div class="invalid-feedback">
                 Favor inserir o cpf.
               </div>
@@ -111,7 +111,7 @@
 
             <div class="col-sm-6">
               <label for="rg" class="form-label">RG</label>
-              <input type="text" class="form-control" id="rg" name="rg" value="" required>
+              <input type="text" class="form-control" id="pess_rg" name="pess_rg" value="" required>
               <div class="invalid-feedback">
                 Favor inserir o rg.
               </div>
@@ -119,7 +119,7 @@
 
             <div class="col-sm-6">
               <label for="nascimento" class="form-label">Data de Nascimento</label>
-              <input type="date" class="form-control" id="nascimento" name="nascimento" value="" required>
+              <input type="date" class="form-control" id="pess_nasc" name="pess_nasc" value="" required>
               <div class="invalid-feedback">
                 Favor inserir a data de nascimento.
               </div>
@@ -127,7 +127,7 @@
 
             <div class="col-sm-6">
               <label for="genero" class="form-label">Sexo</label>
-              <select class="form-select" id="genero" name="genero" aria-label="Default select example">
+              <select class="form-select" id="pess_genero" name="pess_genero" aria-label="Default select example">
                 <option selected>Selecione</option>
                 <option value="M">Masculino</option>
                 <option value="F">Feminino</option>
@@ -137,12 +137,12 @@
 
             <div class="col-sm-6">
               <label for="telefone" class="form-label">Telefone</label>
-              <input type="tel" class="form-control" id="telefone" name="telefone" value="">
+              <input type="tel" class="form-control" id="pess_telefone" name="pess_telefone" value="">
             </div>
 
             <div class="col-sm-6">
               <label for="celular" class="form-label">Celular</label>
-              <input type="tel" class="form-control" id="celular" name="celular" value="" required>
+              <input type="tel" class="form-control" id="pess_celular" name="pess_celular" value="" required>
               <div class="invalid-feedback">
               Favor inserir a celular.
               </div>
@@ -150,7 +150,7 @@
 
             <div class="col-12">
               <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com">
+              <input type="email" class="form-control" id="pess_email" name="pess_email" placeholder="you@example.com">
               <div class="invalid-feedback">
                 Insira um endereço de e-mail válido.
               </div>
@@ -161,7 +161,7 @@
 
             <div class="col-12">
               <label for="logradouro" class="form-label">Logradouro</label>
-              <input type="text" class="form-control" id="logradouro" name="logradouro" required>
+              <input type="text" class="form-control" id="pess_logra" name="pess_logra" required>
               <div class="invalid-feedback">
                 Favor inserir o endereço.
               </div>
@@ -169,7 +169,7 @@
 
             <div class="col-3">
               <label for="lognum" class="form-label">Número</label>
-              <input type="text" class="form-control" id="lognum" name="lognum" required>
+              <input type="text" class="form-control" id="pess_lognum" name="pess_lognum" required>
               <div class="invalid-feedback">
                 Favor inserir o número residencial.
               </div>
@@ -177,7 +177,7 @@
 
             <div class="col-9">
               <label for="bairro" class="form-label">Bairro</label>
-              <input type="text" class="form-control" id="bairro" name="bairro"required>
+              <input type="text" class="form-control" id="pess_bairro" name="pess_bairro"required>
               <div class="invalid-feedback">
                 Favor inserir o bairro.
               </div>
@@ -185,7 +185,7 @@
 
             <div class="col-4">
               <label for="cep" class="form-label">Cep</label>
-              <input type="text" class="form-control" id="cep" name="cep"required>
+              <input type="text" class="form-control" id="pess_cep" name="pess_cep" required>
               <div class="invalid-feedback">
                 Favor inserir o bairro.
               </div>
@@ -193,7 +193,7 @@
             
             <div class="col-8">
               <label for="municipio" class="form-label">Município</label>
-              <input type="text" class="form-control" id="municipio" name="municipio" required>
+              <input type="text" class="form-control" id="pess_municipio" name="pess_municipio" required>
               <div class="invalid-feedback">
                 Favor inserir o município.
               </div>
@@ -201,7 +201,7 @@
 
             <div class="col-4">
               <label for="estado" class="form-label">Estado</label>
-              <select class="form-select" id="estado" name="estado" required>
+              <select class="form-select" id="pess_estado" name="pess_estado" required>
                <option selected>Selecione</option>
                 <option value="SP">São Paulo</option>
                 <option value="AC">Acre</option>
@@ -234,23 +234,21 @@
 
             <div class="col-8">
               <label for="pais" class="form-label">Pais</label>
-              <input type="text" class="form-control" id="pais" name="pais" required>
+              <input type="text" class="form-control" id="pess_pais" name="pess_pais" required>
               <div class="invalid-feedback">
                 Favor inserir o país.
               </div>
             </div>
 
-          <hr class="my-4">
-
           <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="same-address">
-            <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
+            <input type="checkbox" class="form-check-input" id="same-pess_ativo" name="pess_ativo" value="1" checked>
+            <label class="form-check-label" for="same-address">Ativo</label>
           </div>
 
-          <div class="form-check">
+          <!-- <div class="form-check">
             <input type="checkbox" class="form-check-input" id="save-info">
             <label class="form-check-label" for="save-info">Save this information for next time</label>
-          </div>          
+          </div>  -->         
 
           <hr class="my-4">
 

@@ -108,7 +108,7 @@
             </div>
             
             <div class="col-sm-12">
-              <label for="descricao" class="form-label">Descrição da Especialização</label>
+              <label for="descricao" class="form-label">Descrição do Semestre</label>
               <input type="text" class="form-control" id="descricao" name ="descricao" value="" required>
               <div class="invalid-feedback">
                 Favor inserir a Descrição da Especialização.
