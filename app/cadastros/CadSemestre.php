@@ -85,22 +85,22 @@
         <hr class="my-4">
                     
 
-        <form class="needs-validation" novalidate> <!-- action="cad_Pessoabd.php" method="POST -->
+        <form action="CadSemestrebd.php" method="POST" class="needs-validation" novalidate> <!-- action="cad_Pessoabd.php" method="POST -->
           <div class="row g-3">
 
           <div class="col-sm-4">
               <label for="codigo" class="form-label">Código</label>
-              <input type="text" class="form-control" id="codigo" name ="codigo" value="" disabled> 
+              <input type="text" class="form-control" id="seme_cod" name ="seme_cod" value="" disabled> 
             </div>
             
             <div class="col-sm-3">
               <label for="ano" class="form-label">Ano</label>
-              <input type="text" class="form-control" id="ano" name ="ano" value=""> 
+              <input type="text" class="form-control" id="seme_ano" name ="seme_ano" value=""> 
             </div>
 
             <div class="col-5">
               <label for="sequencial" class="form-label">Sequêncial</label>
-              <select class="form-select" id="sequencial" name="sequencial" required>
+              <select class="form-select" id="seme_sequencia" name="seme_sequencia" required>
                <option selected>Selecione</option>
                 <option value= 1>Primeiro</option>                
                 <option value= 2>Segundo</option>                
@@ -109,7 +109,7 @@
             
             <div class="col-sm-12">
               <label for="descricao" class="form-label">Descrição do Semestre</label>
-              <input type="text" class="form-control" id="descricao" name ="descricao" value="" required>
+              <input type="text" class="form-control" id="seme_descricao" name ="seme_descricao" value="" required>
               <div class="invalid-feedback">
                 Favor inserir a Descrição da Especialização.
               </div>

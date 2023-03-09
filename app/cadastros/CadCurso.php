@@ -85,17 +85,17 @@
         <hr class="my-4">
                     
 
-        <form class="needs-validation" novalidate> <!-- action="cad_Pessoabd.php" method="POST -->
+        <form action="CadCursobd.php" method="POST" class="needs-validation" novalidate>
           <div class="row g-3">
 
             <div class="col-sm-3">
-              <label for="codigo" class="form-label">Código</label>
-              <input type="text" class="form-control" id="codigo" name ="codigo" value="" disabled> 
+              <label for="curs_cod" class="form-label">Código</label>
+              <input type="text" class="form-control" id="curs_cod" name ="curs_cod" value="" disabled> 
             </div>
             
             <div class="col-sm-4">
-              <label for="duracao" class="form-label">Duração do Curso</label>
-              <input type="text" class="form-control" id="duracao" name ="descduracaoricao" value="" required>
+              <label for="curs_duracao" class="form-label">Duração do Curso</label>
+              <input type="text" class="form-control" id="curs_duracao" name ="curs_duracao" value="" required>
               <div class="invalid-feedback">
                 Favor inserir a Duração do Curso.
               </div>
