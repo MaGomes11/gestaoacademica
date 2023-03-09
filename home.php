@@ -160,7 +160,7 @@
             <li><a href="./app/cadastros/CadSemestre.php" class="link-dark d-inline-flex text-decoration-none rounded">Matricula</a></li>
             <li><a href="./app/cadastros/CadSemestre.php" class="link-dark d-inline-flex text-decoration-none rounded">Semestre</a></li>
             <li><a href="./app/cadastros/CadCurso.php" class="link-dark d-inline-flex text-decoration-none rounded">Curso</a></li>
-            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Monthly</a></li>
+            <li><a href="./app/cadastros/CadDisciplina.php" class="link-dark d-inline-flex text-decoration-none rounded">Disciplina</a></li>
             <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Annually</a></li>
           </ul>
         </div>

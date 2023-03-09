@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.108.0">
-    <title>Cadastro de Curso</title>
+    <title>Cadastro de Disciplina</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/checkout/">
     <link href="../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -75,44 +75,37 @@
   <main>
     <div class="py-5 text-center">
       <img class="d-block mx-auto mb-4" src="../../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-      <h2>Cadastro de Curso</h2>
+      <h2>Cadastro de Disciplina</h2>
     </div>
 
     <div class="row g-5">     
       <div class="col-md-7 col-lg-8">
 
-        <h6 class="mb-3">Dados do Curso</h6>
+        <h6 class="mb-3">Dados do Disciplina</h6>
         <hr class="my-4">
                     
 
-        <form action="CadCursobd.php" method="POST" class="needs-validation" novalidate>
+        <form action="CadDisciplinabd.php" method="POST" class="needs-validation" novalidate>
           <div class="row g-3">
 
             <div class="col-sm-3">
-              <label for="curs_cod" class="form-label">Código</label>
-              <input type="text" class="form-control" id="curs_cod" name ="curs_cod" value="" disabled> 
+              <label for="disc_cod" class="form-label">Código</label>
+              <input type="text" class="form-control" id="disc_cod" name ="disc_cod" value="" disabled> 
             </div>
             
-            <div class="col-sm-4">
-              <label for="curs_duracao" class="form-label">Duração do Curso</label>
-              <input type="text" class="form-control" id="curs_duracao" name ="curs_duracao" value="" required>
-              <div class="invalid-feedback">
-                Favor inserir a Duração do Curso.
-              </div>
-            </div>
 
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="T" id="curs_flag" name="curs_flag" checked>
-              <label class="form-check-label" for="curs_flag">
+              <input class="form-check-input" type="checkbox" value="T" id="disc_ativo" name="disc_ativo" checked>
+              <label class="form-check-label" for="disc_ativo">
                 Ativo
               </label>
             </div>
 
             <div class="col-sm-12">
-              <label for="curs_descricao" class="form-label">Descrição do Curso</label>
-              <input type="text" class="form-control" id="curs_descricao" name ="curs_descricao" value="" required>
+              <label for="disc_descricao" class="form-label">Descrição do Disciplina</label>
+              <input type="text" class="form-control" id="disc_descricao" name ="disc_descricao" value="" required>
               <div class="invalid-feedback">
-                Favor inserir a Descrição do Curso.
+                Favor inserir a Descrição do Disciplina.
               </div>
             </div>                               
 
