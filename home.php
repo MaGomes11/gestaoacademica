@@ -87,9 +87,9 @@
         <div class="collapse show" id="home-collapse">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
             <li><a href="app/cadastros/insert/CadPessoa.php" class="link-dark d-inline-flex text-decoration-none rounded">Pessoa</a></li>
-            <li><a href="./app/cadastros/CadFuncionario.php" class="link-dark d-inline-flex text-decoration-none rounded">Funcionário</a></li>
-            <li><a href="./app/cadastros/CadFormacao.php" class="link-dark d-inline-flex text-decoration-none rounded">Formação</a></li>
-            <li><a href="./app/cadastros/CadEspecializacao.php" class="link-dark d-inline-flex text-decoration-none rounded">Especialização</a></li>
+            <li><a href="app/cadastros/insert/CadFuncionario.php" class="link-dark d-inline-flex text-decoration-none rounded">Funcionário</a></li>
+            <li><a href="app/cadastros/insert/CadFormacao.php" class="link-dark d-inline-flex text-decoration-none rounded">Formação</a></li>
+            <li><a href="app/cadastros/insert/CadEspecializacao.php" class="link-dark d-inline-flex text-decoration-none rounded">Especialização</a></li>
           </ul>
         </div>
       </li>
@@ -99,10 +99,10 @@
         </button>
         <div class="collapse" id="dashboard-collapse">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li><a href="./app/cadastros/CadSemestre.php" class="link-dark d-inline-flex text-decoration-none rounded">Matricula</a></li>
-            <li><a href="./app/cadastros/CadSemestre.php" class="link-dark d-inline-flex text-decoration-none rounded">Semestre</a></li>
-            <li><a href="./app/cadastros/CadCurso.php" class="link-dark d-inline-flex text-decoration-none rounded">Curso</a></li>
-            <li><a href="./app/cadastros/CadDisciplina.php" class="link-dark d-inline-flex text-decoration-none rounded">Disciplina</a></li>
+            <li><a href="app/cadastros/insert/CadSemestre.php" class="link-dark d-inline-flex text-decoration-none rounded">Matricula</a></li>
+            <li><a href="app/cadastros/insert/CadSemestre.php" class="link-dark d-inline-flex text-decoration-none rounded">Semestre</a></li>
+            <li><a href="app/cadastros/insert/CadCurso.php" class="link-dark d-inline-flex text-decoration-none rounded">Curso</a></li>
+            <li><a href="app/cadastros/insert/CadDisciplina.php" class="link-dark d-inline-flex text-decoration-none rounded">Disciplina</a></li>
             <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Annually</a></li>
           </ul>
         </div>
