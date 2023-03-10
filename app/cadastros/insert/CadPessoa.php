@@ -8,8 +8,8 @@
     <meta name="generator" content="Hugo 0.108.0">
     <title>Cadastro de Pessoa</title>
 
-    <link href="../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="checkout.css" rel="stylesheet">
+    <link href="../../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../checkout.css" rel="stylesheet">
 
   </head>
   <body class="bg-dark-subtle">
@@ -17,7 +17,7 @@
 <div class="container-xl">
   <main>
     <div class="py-3 text-center">
-      <img class="d-block mx-auto mb-4" src="../../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+      <img class="d-block mx-auto mb-4" src="../../../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
       <h2>Cadastro de Pessoas</h2>
     </div>
 
