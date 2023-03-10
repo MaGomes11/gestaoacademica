@@ -24,7 +24,8 @@
             ));
 
             if($comandoSQL->rowCount() > 0){
-                echo("REGISTRO SALVO COM SUCESSO");
+                $msg = 'Cadastro realizado com sucesso';
+                header("Location: ../../home.php?msg=$msg");
             }
             else{
                 echo("ERRO: NO CADASTRO.");

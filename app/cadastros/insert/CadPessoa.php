@@ -8,72 +8,15 @@
     <meta name="generator" content="Hugo 0.108.0">
     <title>Cadastro de Pessoa</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/checkout/">
     <link href="../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="checkout.css" rel="stylesheet">
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      .b-example-divider {
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-    </style>
-    
-
-    
-    <!-- Custom styles for this template -->
-    <link href="checkout.css" rel="stylesheet">
   </head>
   <body class="bg-dark-subtle">
     
-<div class="container">
+<div class="container-xl">
   <main>
-    <div class="py-5 text-center">
+    <div class="py-3 text-center">
       <img class="d-block mx-auto mb-4" src="../../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
       <h2>Cadastro de Pessoas</h2>
     </div>
@@ -81,14 +24,14 @@
     <div class="row g-5">     
       <div class="col-md-7 col-lg-8">
 
-        <h4 class="mb-3">Dados Pessoais</h4>
-        <hr class="my-4">
+        <h4 class="mb-1 py-3">Dados Pessoais</h4>
+        <hr class="my-1">
                     
 
         <form action="CadPessoabd.php" method="POST" class="needs-validation" novalidate> <!-- action="cad_Pessoabd.php" method="POST -->
           <div class="row g-3">
 
-          <div class="col-sm-4">
+          <div class="col-sm-3">
               <label for="codigo" class="form-label ">Código</label>
               <input type="text" class="form-control" id="codigo" name ="codigo" value="" disabled>
             </div>
@@ -101,7 +44,7 @@
               </div>
             </div>
 
-            <div class="col-sm-6">
+            <div class="col-sm-4">
               <label for="cpf" class="form-label">CPF</label>
               <input type="text" class="form-control" id="pess_cpf" name="pess_cpf" placeholder="" value="" required>
               <div class="invalid-feedback">
@@ -109,7 +52,7 @@
               </div>
             </div>
 
-            <div class="col-sm-6">
+            <div class="col-sm-4">
               <label for="rg" class="form-label">RG</label>
               <input type="text" class="form-control" id="pess_rg" name="pess_rg" value="" required>
               <div class="invalid-feedback">
@@ -117,7 +60,7 @@
               </div>
             </div>
 
-            <div class="col-sm-6">
+            <div class="col-sm-4">
               <label for="nascimento" class="form-label">Data de Nascimento</label>
               <input type="date" class="form-control" id="pess_nasc" name="pess_nasc" value="" required>
               <div class="invalid-feedback">
@@ -125,7 +68,7 @@
               </div>
             </div>
 
-            <div class="col-sm-6">
+            <div class="col-sm-4">
               <label for="genero" class="form-label">Sexo</label>
               <select class="form-select" id="pess_genero" name="pess_genero" aria-label="Default select example">
                 <option selected>Selecione</option>
@@ -135,12 +78,12 @@
               </select>  
             </div>
 
-            <div class="col-sm-6">
+            <div class="col-sm-4">
               <label for="telefone" class="form-label">Telefone</label>
               <input type="tel" class="form-control" id="pess_telefone" name="pess_telefone" value="">
             </div>
 
-            <div class="col-sm-6">
+            <div class="col-sm-4">
               <label for="celular" class="form-label">Celular</label>
               <input type="tel" class="form-control" id="pess_celular" name="pess_celular" value="" required>
               <div class="invalid-feedback">
@@ -148,7 +91,7 @@
               </div>
             </div>
 
-            <div class="col-12">
+            <div class="col-6">
               <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
               <input type="email" class="form-control" id="pess_email" name="pess_email" placeholder="you@example.com">
               <div class="invalid-feedback">
@@ -156,8 +99,8 @@
               </div>
             </div>
 
-            <h4 class="mb-3">Endereço</h4>
-            <hr class="my-4">
+            <h4 class="mb-1 py-3">Endereço</h4>
+            <hr class="my-1">
 
             <div class="col-12">
               <label for="logradouro" class="form-label">Logradouro</label>
@@ -250,7 +193,7 @@
             <label class="form-check-label" for="save-info">Save this information for next time</label>
           </div>  -->         
 
-          <hr class="my-4">
+          <hr class="my-5">
 
           <div class="d-grid gap-2 d-md-block">
             <button class="btn btn-primary col-sm-4" type="submit">Salvar</button>
