@@ -21,7 +21,7 @@
     <div class="row g-5">     
       <div class="col-md-7 col-lg-8">
         <div class="col-sm-6">
-          <h6>Dados do Curso</h6>
+          <h5>Dados do Curso</h5>
         </div>
 
           <ul class="nav justify-content-end">

@@ -28,7 +28,7 @@
         <hr class="my-1">
                     
 
-        <form action="CadPessoabd.php" method="POST" class="needs-validation" novalidate> <!-- action="cad_Pessoabd.php" method="POST -->
+        <form action="CadPessoabd.php" method="POST" class="needs-validation" novalidate> 
           <div class="row g-3">
 
           <div class="col-sm-3">
