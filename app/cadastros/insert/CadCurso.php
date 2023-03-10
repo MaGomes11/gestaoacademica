@@ -3,30 +3,37 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.108.0">
     
     <title>Cadastro de Curso</title>
 
-    <link href="../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="checkout.css" rel="stylesheet">
+    <link href="../../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../checkout.css" rel="stylesheet">
   </head>
   <body class="bg-dark-subtle">
     
 <div class="container-sm">
   <main>
-    <div class="py-5 text-center">
-      <img class="d-block mx-auto mb-4" src="../../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+    <div class="py-5 g-5 text-center">
+      <img class="d-block mx-auto mb-4" src="../../../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
       <h2>Cadastro de Curso</h2>
     </div>
 
     <div class="row g-5">     
       <div class="col-md-7 col-lg-8">
+        <div class="col-sm-6">
+          <h6>Dados do Curso</h6>
+        </div>
 
-        <h6 class="mb-3">Dados do Curso</h6>
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../view/ViewCurso.php">Visualizar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../home.php">Home</a>
+            </li>          
+          </ul>   
+
         <hr class="my-4">
-                    
 
         <form action="CadCursobd.php" method="POST" class="needs-validation" novalidate>
           <div class="row g-3">
@@ -82,7 +89,7 @@
 </div>
 
 
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../assets/dist/js/bootstrap.bundle.min.js"></script>
 
       <script src="checkout.js"></script>
   </body>
