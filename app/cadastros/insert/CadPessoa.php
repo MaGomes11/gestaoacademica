@@ -25,6 +25,15 @@
       <div class="col-md-7 col-lg-8">
 
         <h4 class="mb-1 py-3">Dados Pessoais</h4>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../view/ViewPessoa.php">Visualizar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../home.php">Home</a>
+            </li>          
+        </ul> 
+
         <hr class="my-1">
                     
 
