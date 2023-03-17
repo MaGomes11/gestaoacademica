@@ -20,6 +20,16 @@
       <img class="d-block mx-auto mb-4" src="../../../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
       <h2>Cadastro de Curso</h2>
     </div>
+    <div>
+    <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../insert/CadPessoa.php">Cadastrar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../home.php">Home</a>
+            </li>          
+        </ul> 
+    </div>
     <?php 
       require_once("ViewPessoabd.php");
       if($total > 0){
@@ -49,8 +59,8 @@
           <td><?=$linha["Pess_a_cpf"];?></td> 
           <td><?=$linha["Pess_a_rg"];?></td> 
           <td><?=$linha["Pess_a_celular"];?></td> 
-          <td><a href="atu_login.php?id=<?=$linha['Pess_i_cod'];?>"><img src="_img/editar2.png" width="32" alt="Atu"></a></td>
-          <td><a href="exc_login.php?id=<?=$linha['Pess_i_cod'];?>"><img src="_img/excluir2.png" width="32" alt="Exc"></a></td>
+          <td><a href="../update/atuPessoa.php?id=<?=$linha['Pess_i_cod'];?>"><img src="_img/editar2.png" width="32" alt="Atu"></a></td>
+          <td><a href="../delete/delPessoa.php?id=<?=$linha['Pess_i_cod'];?>"><img src="_img/excluir2.png" width="32" alt="Exc"></a></td>
         </tr>
         <?php
           }

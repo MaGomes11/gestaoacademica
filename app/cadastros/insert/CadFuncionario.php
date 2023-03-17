@@ -41,9 +41,11 @@
         <form action="cadFuncionariobd.php" method="POST" class="needs-validation" novalidate> 
           <div class="row g-3">
 
-          <div class="col-sm-6">
-              <label for="codigo" class="form-label">Código</label>
-              <input type="text" class="form-control" id="codigo" name ="codigo" value="" disabled>
+          <div class="col-sm-12">  
+            <div class="col-sm-4">
+                <label for="codigo" class="form-label">Código</label>
+                <input type="text" class="form-control" id="codigo" name ="codigo" value="" disabled>
+              </div>
             </div>
   
             <div class="col-sm-4">

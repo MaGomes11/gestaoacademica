@@ -1,22 +1,4 @@
-<?php
-    session_start();
 
-    if((!isset($_SESSION["nome"]))or
-       (!isset($_SESSION["nivel"]))or
-       (isset($_SESSION["tempoSessao"])== false)or
-       ($_SESSION["tempoSessao"]< time())
-      ){
-        //sem login volta para o index
-        session_unset();//feche a sessão
-        session_destroy();
-        header("location:../../index.php");
-        exit();
-
-      }else{
-        //logado aumentar o tempo de sessão
-        $_SESSION["tempoSessao"] = time()+60;
-    }
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
