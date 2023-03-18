@@ -36,42 +36,63 @@
           </ul> 
 
         <hr class="my-4">
-                    
+        
+        <?php
+          $pess_cod = filter_input(INPUT_GET, "id", FILTER_SANITIZE_NUMBER_INT);
+          require_once("../view/_view/CadViewPessoabd.php");
+        ?>                  
 
         <form action="cadFuncionariobd.php" method="POST" class="needs-validation" novalidate> 
           <div class="row g-3">
 
+          <input type="hidden" name="id"  value="<?=$pess_cod;?>" >
+                  
+                        
           <div class="col-sm-12">  
-            <div class="col-sm-4">
-                <label for="codigo" class="form-label">Código</label>
-                <input type="text" class="form-control" id="codigo" name ="codigo" value="" disabled>
+            <div class="col-sm-2">
+                <label for="codigo" class="form-label">Código Funcionário</label>
+                <input type="text" class="form-control" id="func_cod" name ="func_cod" value="" disabled>
               </div>
             </div>
-  
-            <div class="col-sm-4">
-              <label for="codigo_pes" class="form-label">Código Pessoa</label>
-              <input type="text" class="form-control" id="codigo_pes" name ="codigo_pes" value="">
+            <?php
+              foreach($dados as $linha)
+              {
+            ?>
+            <div class="col-sm-2">
+              <label for="codigo_pes" class="form-label">Código</label>
+              <input type="text" class="form-control" id="pess_cod" name ="pess_cod" value="<?=$linha['Pess_i_cod'];?>">
             </div>
 
-            <div class="col-sm-8">
+            <div class="col-sm-6">
               <label for="nome_pes" class="form-label">Nome Pessoa</label>
-              <input type="text" class="form-control" id="nome_pes" name ="nome_pes" value="">
-            </div>            
+              <input type="text" class="form-control" id="pess_nome" name ="pess_nome" value="<?=$linha['Pess_a_nome'];?>">
+            </div>  
+
+            <?php
+              } 
+            ?> 
+
+            <div class="col-sm-4">
+              <a class="btn btn-primary" href="../view/_view/CadViewPessoa.php" role="button">Pesquisar</a>
+              <a class="btn btn-primary" href="#" role="button">Cadastrar</a>
+            </div>
 
             <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="prof">
-            <label class="form-check-label" for="save-info">Professor</label>
-          </div>
+              <input type="checkbox" class="form-check-input" id="func_prof" name="func_prof" value="T">
+              <label class="form-check-label" for="save-info">Professor</label>
+            </div>
 
             <div class="col-sm-6">
               <label for="login" class="form-label">Login</label>
-              <input type="text" class="form-control" id="login" name="login" value="">
+              <input type="text" class="form-control" id="func_login" name="func_login" value="">
             </div>
 
             <div class="col-sm-6">
               <label for="senha" class="form-label">Senha</label>
-              <input type="text" class="form-control" id="senha" name="senha" value="" required>     
+              <input type="password" class="form-control" id="func_senha" name="senha" value="" required>     
             </div>                            
+            
+            
 
           <hr class="my-4">
 
@@ -98,6 +119,6 @@
 
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
-      <script src="checkout.js"></script>
+      <script src="../checkout.js"></script>
   </body>
 </html>
