@@ -53,7 +53,7 @@
           <th scope="row"><?=$linha["Form_i_cod"];?></th>
           <td><?=$linha["Form_i_descricao"];?></td>
           <td><?=$linha["Espc_a_descricao"];?></td>
-          <td><a href="../update/atuFormacao.php"><img src="_img/editar2.png" width="32" alt="Atu"></a></td>
+          <td><a href="../update/atuFormacao.php?id=<?=$linha['Form_i_cod'];?>"><img src="_img/editar2.png" width="32" alt="Atu"></a></td>
           <td><a href="?id=<?=$linha['Form_i_cod'];?>"><img src="_img/excluir2.png" width="32" alt="Exc"></a></td>
         </tr>
         <?php

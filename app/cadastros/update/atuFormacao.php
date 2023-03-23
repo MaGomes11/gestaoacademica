@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Atualização de Funcionário</title>
+    <title>Atualização de Formação</title>
 
     <link href="../../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -16,13 +16,13 @@
   <main>
     <div class="py-5 text-center">
       <img class="d-block mx-auto mb-4" src="../../../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-      <h2>Atualização de Funcionário</h2>
+      <h2>Atualização de Formação</h2>
     </div>
     
     <?php
-      $func_cod = filter_input(INPUT_GET, "id", FILTER_SANITIZE_NUMBER_INT);
-          require_once("atuViewFuncionario.php");
-        ?>  
+      $form_cod = filter_input(INPUT_GET, "id", FILTER_SANITIZE_NUMBER_INT);
+          require_once("atuViewFormacao.php");
+    ?>  
 
     <div class="row g-5">     
       <div class="col-md-7 col-lg-8">
@@ -31,7 +31,7 @@
 
         <ul class="nav justify-content-end">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../view/ViewFuncionario.php">Visualizar</a>
+              <a class="nav-link active" aria-current="page" href="../view/ViewFormacao.php">Visualizar</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../../../home.php">Home</a>
@@ -52,38 +52,37 @@
               {
           ?>
 
-          <div class="col-sm-12">  
-            <div class="col-sm-2">
-                <label for="codigo" class="form-label">Código Funcionário</label>
-                <input type="text" class="form-control" id="func_cod" name ="func_cod" value="<?=$linha['Func_i_cod'];?>" disabled>
+           <div class="col-sm-3">
+              <label for="codigo" class="form-label">Código</label>
+              <input type="text" class="form-control" id="codigo" name ="codigo" value="<?=$linha['Form_i_cod'];?>" disabled>
+            </div>
+            
+            <div class="col-sm-9">
+              <label for="descForm" class="form-label">Descrição da Formação</label>
+              <input type="text" class="form-control" id="descForm" name ="descForm" value="<?=$linha['Form_i_descricao'];?>" required>
+              <div class="invalid-feedback">
+                Favor inserir a Descrição da Formação.
               </div>
             </div>
-            
-            <div class="col-sm-2">
-              <label for="codigo_pes" class="form-label">Código</label>
-              <input type="text" class="form-control" id="pess_cod" name ="pess_cod" value="<?=$linha['Pess_i_cod'];?>">
+
+            <h6 class="mb-3">Dados Especialização</h6>
+
+            <div class="col-sm-3">
+              <label for="codEsp" class="form-label">Código</label>
+              <input type="text" class="form-control" id="codEsp" name="codEsp" placeholder="" value="<?=$linha['Espc_i_cod'];?>" required>
+              <div class="invalid-feedback">
+                Favor inserir o código.
+              </div>
             </div>
 
-            <div class="col-sm-6">
-              <label for="nome_pes" class="form-label">Nome Pessoa</label>
-              <input type="text" class="form-control" id="pess_nome" name ="pess_nome" value="<?=$linha['Pess_a_nome'];?>" disabled>
-            </div>              
+            <div class="col-sm-9">
+              <label for="descEsp" class="form-label">Descrição da Especialização</label>
+              <input type="text" class="form-control" id="descEsp" name="descEsp" value="<?=$linha['Espc_a_descricao'];?>" disabled>
+              <div class="invalid-feedback">
+                Favor inserir a Descrição da Especialização.
+              </div>
+            </div>               
 
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="func_prof" name="func_prof" value="T">
-              <label class="form-check-label" for="save-info">Professor</label>
-            </div>
-
-            <div class="col-sm-6">
-              <label for="login" class="form-label">Login</label>
-              <input type="text" class="form-control" id="func_login" name="func_login" value="<?=$linha['Func_a_login'];?>">
-            </div>
-
-            <div class="col-sm-6">
-              <label for="senha" class="form-label">Senha</label>
-              <input type="password" class="form-control" id="func_senha" name="senha" value="<?=$linha['Func_a_login'];?>"  disabled>     
-            </div>                            
-            
           <?php
             } 
           ?>   
