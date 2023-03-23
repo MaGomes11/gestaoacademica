@@ -12,8 +12,8 @@
   </head>
   <body class="bg-dark-subtle">
     
-<div class="container">
-  <main>
+    <div class="container">
+    <main>
     <div class="py-5 text-center">
       <img class="d-block mx-auto mb-4" src="../../../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
       <h2>Atualização de Funcionário</h2>
@@ -42,7 +42,7 @@
         
                         
 
-        <form action="cadFuncionariobd.php" method="POST" class="needs-validation" novalidate> 
+        <form action="atuFuncionariobd.php" method="POST" class="needs-validation" novalidate> 
           <div class="row g-3">
 
           <input type="hidden" name="id"  value="<?=$func_cod;?>" >

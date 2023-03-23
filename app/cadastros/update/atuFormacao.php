@@ -42,10 +42,10 @@
         
                         
 
-        <form action="cadFuncionariobd.php" method="POST" class="needs-validation" novalidate> 
+        <form action="atuFormacaobd.php" method="POST" class="needs-validation" novalidate> 
           <div class="row g-3">
 
-          <input type="hidden" name="id"  value="<?=$func_cod;?>" >
+          <input type="hidden" name="id"  value="<?=$form_cod;?>" >
                   
           <?php
             foreach($dados as $linha)
@@ -54,12 +54,12 @@
 
            <div class="col-sm-3">
               <label for="codigo" class="form-label">Código</label>
-              <input type="text" class="form-control" id="codigo" name ="codigo" value="<?=$linha['Form_i_cod'];?>" disabled>
+              <input type="text" class="form-control" id="form_cod" name ="form_cod" value="<?=$linha['Form_i_cod'];?>" disabled>
             </div>
             
             <div class="col-sm-9">
               <label for="descForm" class="form-label">Descrição da Formação</label>
-              <input type="text" class="form-control" id="descForm" name ="descForm" value="<?=$linha['Form_i_descricao'];?>" required>
+              <input type="text" class="form-control" id="form_descricao" name ="form_descricao" value="<?=$linha['Form_i_descricao'];?>" required>
               <div class="invalid-feedback">
                 Favor inserir a Descrição da Formação.
               </div>
@@ -69,7 +69,7 @@
 
             <div class="col-sm-3">
               <label for="codEsp" class="form-label">Código</label>
-              <input type="text" class="form-control" id="codEsp" name="codEsp" placeholder="" value="<?=$linha['Espc_i_cod'];?>" required>
+              <input type="text" class="form-control" id="espc_cod" name="espc_cod" placeholder="" value="<?=$linha['Espc_i_cod'];?>" required>
               <div class="invalid-feedback">
                 Favor inserir o código.
               </div>

@@ -1,5 +1,10 @@
 <?php
 
+    /* echo "<pre>";
+    print_r($_POST);
+    print_r($_SERVER['REQUEST_METHOD']);
+    echo "</pre>";  */
+
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         $pess_cod = filter_input(INPUT_POST,'id', FILTER_SANITIZE_NUMBER_INT);
         $pess_nome = filter_input(INPUT_POST,'pess_nome', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
