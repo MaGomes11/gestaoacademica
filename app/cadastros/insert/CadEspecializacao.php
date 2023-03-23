@@ -8,8 +8,7 @@
     <meta name="generator" content="Hugo 0.108.0">
     <title>Cadastro de Especialização</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/checkout/">
-    <link href="../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -64,9 +63,6 @@
       }
     </style>
     
-
-    
-    <!-- Custom styles for this template -->
     <link href="checkout.css" rel="stylesheet">
   </head>
   <body class="bg-dark-subtle">
@@ -74,17 +70,17 @@
 <div class="container">
   <main>
     <div class="py-5 text-center col-sm-8">
-      <img class="d-block mx-auto mb-4" src="../../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+      <img class="d-block mx-auto mb-4" src="../../../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
       <h2>Cadastro de Especialização</h2>
     </div>
 
     <div class="row col-sm-8"> 
       <ul class="nav justify-content-end">
         <li class="nav-item">
-          <a class="nav-link" href="#">Cadastrar</a>
+          <a class="nav-link" href="../view/ViewEspecializacao.php">Vizualizar</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Vizualizar</a>
+          <a class="nav-link" href="../../../home.php">Home</a>
         </li>
       </ul>
     </div>
@@ -134,7 +130,7 @@
 </div>
 
 
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../assets/dist/js/bootstrap.bundle.min.js"></script>
 
       <script src="checkout.js"></script>
   </body>

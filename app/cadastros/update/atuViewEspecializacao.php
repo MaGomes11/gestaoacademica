@@ -3,14 +3,14 @@
 
     try{
 
-        $comandoSQL = "SELECT funcionario.Func_i_cod, funcionario.Pess_i_cod, pessoa.Pess_a_nome, funcionario.Func_a_prof, funcionario.Func_a_login FROM `funcionario` inner join `pessoa` on pessoa.Pess_i_cod = funcionario.Pess_i_cod WHERE Func_i_cod =".$func_cod;
+        $comandoSQL = "SELECT `Espc_i_cod`, `Espc_a_descricao` FROM `especializacao` WHERE Espc_i_cod = ".$espc_cod;
 
         $selecao = $conexao->query($comandoSQL);
 
         $dados = $selecao->fetchAll(PDO::FETCH_ASSOC);
 
-        $total = $selecao->rowCount();     
-
+        $total = $selecao->rowCount();
+        
     }catch(PDOException $erro)
     {
         echo("ERRO:".$erro->getCode()."<br>");

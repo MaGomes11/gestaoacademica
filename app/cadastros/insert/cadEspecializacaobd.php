@@ -10,7 +10,7 @@
     {
         $esp_descricao = filter_input(INPUT_POST,'esp_descricao', FILTER_SANITIZE_FULL_SPECIAL_CHARS); 
 
-        require_once("../_conexao/conexao.php");
+        require_once("../../_conexao/conexao.php");
 
         /* echo "<pre>"; 
         echo($esp_descricao."<br>");

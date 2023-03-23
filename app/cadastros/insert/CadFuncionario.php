@@ -45,7 +45,7 @@
         <form action="cadFuncionariobd.php" method="POST" class="needs-validation" novalidate> 
           <div class="row g-3">
 
-          <input type="hidden" name="id"  value="<?=$pess_cod;?>" >
+          <input type="hidden" name="id"  value="<?=$func_cod;?>" >
                   
                         
           <div class="col-sm-12">  

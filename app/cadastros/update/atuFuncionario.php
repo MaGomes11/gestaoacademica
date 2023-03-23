@@ -22,7 +22,7 @@
     <?php
       $func_cod = filter_input(INPUT_GET, "id", FILTER_SANITIZE_NUMBER_INT);
           require_once("atuViewFuncionario.php");
-        ?>  
+    ?>  
 
     <div class="row g-5">     
       <div class="col-md-7 col-lg-8">

@@ -7,7 +7,7 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.108.0">
     
-    <title>Vizualização de Formação</title>
+    <title>Cadastro de Especialização</title>
 
     <link href="../../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../checkout.css" rel="stylesheet">
@@ -18,12 +18,12 @@
   <main>
     <div class="py-5 text-center">
       <img class="d-block mx-auto mb-4" src="../../../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-      <h2>Visualização de Formação</h2>
+      <h2>Visualização de Especialização</h2>
     </div>
 
     <ul class="nav justify-content-end">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="../insert/CadFormacao.php">Cadastrar</a>
+        <a class="nav-link active" aria-current="page" href="../insert/CadEspecializacao.php">Cadastrar</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="../../../home.php">Home</a>
@@ -31,15 +31,14 @@
     </ul> 
 
     <?php 
-      require_once("ViewFormacaobd.php");
+      require_once("ViewEspecializacaobd.php");
       if($total > 0){
     ?>
     <table class="table table-hover table-light">
       <thead class="table table-hover table-secondary">
         <tr>
           <th scope="col">#</th>
-          <th scope="col">Descrição da Formação</th>
-          <th scope="col">Especialização</th>
+          <th scope="col">Descrição do Especializacao</th>
           <th width="60">ATU</th>
           <th width="60">EXC</th>
         </tr>
@@ -50,11 +49,10 @@
           {
         ?>
         <tr>
-          <th scope="row"><?=$linha["Form_i_cod"];?></th>
-          <td><?=$linha["Form_i_descricao"];?></td>
+          <th scope="row"><?=$linha["Espc_i_cod"];?></th>
           <td><?=$linha["Espc_a_descricao"];?></td>
-          <td><a href="../update/atuFormacao.php?id=<?=$linha['Form_i_cod'];?>"><img src="_img/editar2.png" width="32" alt="Atu"></a></td>
-          <td><a href="?id=<?=$linha['Form_i_cod'];?>"><img src="_img/excluir2.png" width="32" alt="Exc"></a></td>
+          <td><a href="../update/atuEspecializacao.php?id=<?=$linha['Espc_i_cod'];?>"><img src="_img/editar2.png" width="32" alt="Atu"></a></td>
+          <td><a href="exc_login.php?id=<?=$linha['Espc_i_cod'];?>"><img src="_img/excluir2.png" width="32" alt="Exc"></a></td>
         </tr>
         <?php
           }
