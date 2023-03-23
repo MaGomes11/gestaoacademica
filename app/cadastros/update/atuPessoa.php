@@ -9,7 +9,7 @@
     <title>Cadastro de Pessoa</title>
 
     <link href="../../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../checkout.css" rel="stylesheet">
+    <link href="../../checkout.css" rel="stylesheet">
 
   </head>
   <body class="bg-dark-subtle">

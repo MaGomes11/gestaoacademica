@@ -7,7 +7,7 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.108.0">
     
-    <title>Cadastro de Curso</title>
+    <title>Cadastro de Semestre</title>
 
     <link href="../../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../checkout.css" rel="stylesheet">
@@ -18,12 +18,12 @@
   <main>
     <div class="py-5 text-center">
       <img class="d-block mx-auto mb-4" src="../../../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-      <h2>Cadastro de Curso</h2>
+      <h2>Visualização de Semestre</h2>
     </div>
 
     <ul class="nav justify-content-end">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="../insert/CadCurso.php">Cadastrar</a>
+        <a class="nav-link active" aria-current="page" href="../insert/CadSemestre.php">Cadastrar</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="../../../home.php">Home</a>
@@ -31,14 +31,16 @@
     </ul> 
 
     <?php 
-      require_once("ViewCursobd.php");
+      require_once("ViewSemestrebd.php");
       if($total > 0){
     ?>
     <table class="table table-hover table-light">
       <thead class="table table-hover table-secondary">
         <tr>
           <th scope="col">#</th>
-          <th scope="col">Descrição do Curso</th>
+          <th scope="col">Ano</th>
+          <th scope="col">Sequencia</th>
+          <th scope="col">Descrição do Semestre</th>
           <th width="60">ATU</th>
           <th width="60">EXC</th>
         </tr>
@@ -49,10 +51,12 @@
           {
         ?>
         <tr>
-          <th scope="row"><?=$linha["Curs_i_cod"];?></th>
-          <td><?=$linha["Curs_a_descricao"];?></td>
-          <td><a href="atu_login.php?id=<?=$linha['Curs_i_cod'];?>"><img src="_img/editar2.png" width="32" alt="Atu"></a></td>
-          <td><a href="exc_login.php?id=<?=$linha['Curs_i_cod'];?>"><img src="_img/excluir2.png" width="32" alt="Exc"></a></td>
+          <th scope="row"><?=$linha["Seme_i_cod"];?></th>
+          <td><?=$linha["Seme_i_ano"];?></td>
+          <td><?=$linha["Seme_i_sequencia"];?></td>
+          <td><?=$linha["Seme_a_descricao"];?></td>
+          <td><a href="../update/atuSemestre.php?id=<?=$linha['Seme_i_cod'];?>"><img src="_img/editar2.png" width="32" alt="Atu"></a></td>
+          <td><a href="?id=<?=$linha['Seme_i_cod'];?>"><img src="_img/excluir2.png" width="32" alt="Exc"></a></td>
         </tr>
         <?php
           }

@@ -3,13 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.108.0">
     <title>Cadastro de Semestre</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/checkout/">
-    <link href="../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -63,42 +60,47 @@
         -webkit-overflow-scrolling: touch;
       }
     </style>
-    
-
-    
-    <!-- Custom styles for this template -->
-    <link href="checkout.css" rel="stylesheet">
+  
   </head>
   <body class="bg-dark-subtle">
     
 <div class="container">
   <main>
     <div class="py-5 text-center">
-      <img class="d-block mx-auto mb-4" src="../../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+      <img class="d-block mx-auto mb-4" src="../../../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
       <h2>Cadastro de Semestre</h2>
     </div>
 
     <div class="row g-5">     
       <div class="col-md-7 col-lg-8">
 
-        <h6 class="mb-3">Dados do Semestre</h6>
+        <h6 class="mb-3">Dados do Semestre</h6>        
+
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../view/ViewSemestre.php">Visualizar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../../home.php">Home</a>
+          </li>          
+        </ul>
+        
         <hr class="my-4">
-                    
 
         <form action="CadSemestrebd.php" method="POST" class="needs-validation" novalidate> <!-- action="cad_Pessoabd.php" method="POST -->
           <div class="row g-3">
 
-          <div class="col-sm-4">
+          <div class="col-sm-2">
               <label for="codigo" class="form-label">Código</label>
               <input type="text" class="form-control" id="seme_cod" name ="seme_cod" value="" disabled> 
             </div>
             
-            <div class="col-sm-3">
+            <div class="col-sm-4">
               <label for="ano" class="form-label">Ano</label>
               <input type="text" class="form-control" id="seme_ano" name ="seme_ano" value=""> 
             </div>
 
-            <div class="col-5">
+            <div class="col-6">
               <label for="sequencial" class="form-label">Sequêncial</label>
               <select class="form-select" id="seme_sequencia" name="seme_sequencia" required>
                <option selected>Selecione</option>
@@ -137,7 +139,7 @@
 </div>
 
 
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../assets/dist/js/bootstrap.bundle.min.js"></script>
 
       <script src="checkout.js"></script>
   </body>

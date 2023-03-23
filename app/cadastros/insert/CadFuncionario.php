@@ -37,10 +37,7 @@
 
         <hr class="my-4">
         
-        <?php
-          $pess_cod = filter_input(INPUT_GET, "id", FILTER_SANITIZE_NUMBER_INT);
-          require_once("../view/_view/CadViewPessoabd.php");
-        ?>                  
+                         
 
         <form action="cadFuncionariobd.php" method="POST" class="needs-validation" novalidate> 
           <div class="row g-3">
@@ -55,6 +52,10 @@
               </div>
             </div>
             <?php
+              $pess_cod = filter_input(INPUT_GET, "id", FILTER_SANITIZE_NUMBER_INT);
+              require_once("../update/atuViewPessoa.php");
+            ?> 
+            <?php
               foreach($dados as $linha)
               {
             ?>
@@ -65,14 +66,14 @@
 
             <div class="col-sm-6">
               <label for="nome_pes" class="form-label">Nome Pessoa</label>
-              <input type="text" class="form-control" id="pess_nome" name ="pess_nome" value="<?=$linha['Pess_a_nome'];?>">
+              <input type="text" class="form-control" id="pess_nome" name ="pess_nome" value="<?=$linha['Pess_a_nome'];?>" required>
             </div>  
 
             <?php
               } 
             ?> 
 
-            <div class="col-sm-4">
+           <div class="col-sm-4">
               <a class="btn btn-primary" href="../view/_view/CadViewPessoa.php" role="button">Pesquisar</a>
               <a class="btn btn-primary" href="#" role="button">Cadastrar</a>
             </div>

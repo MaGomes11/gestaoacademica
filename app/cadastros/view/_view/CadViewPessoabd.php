@@ -3,7 +3,7 @@
 
     try{
 
-        $comandoSQL = "SELECT * FROM `pessoa` WHERE Pess_i_cod =".$pess_cod;
+        $comandoSQL = "SELECT * FROM pessoa ";
 
         $selecao = $conexao->query($comandoSQL);
 
