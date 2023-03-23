@@ -7,9 +7,7 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.108.0">
     <title>Cadastro de Formação</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/checkout/">
-    <link href="../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -74,16 +72,25 @@
 <div class="container">
   <main>
     <div class="py-5 text-center">
-      <img class="d-block mx-auto mb-4" src="../../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+      <img class="d-block mx-auto mb-4" src="../../../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
       <h2>Cadastro de Formação</h2>
     </div>
 
     <div class="row g-5">     
       <div class="col-md-7 col-lg-8">
 
-        <h6 class="mb-3">Dados Formação</h6>
+        <h6 class="mb-3">Dados Formação</h6>        
+        
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../view/ViewFormacao.php">Vizualizar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../../home.php">Home</a>
+          </li>          
+        </ul> 
+
         <hr class="my-4">
-                    
 
         <form class="needs-validation" novalidate> <!-- action="cad_Pessoabd.php" method="POST -->
           <div class="row g-3">

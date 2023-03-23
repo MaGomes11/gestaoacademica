@@ -8,8 +8,6 @@
 
     <link href="../../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    
-    <!-- Custom styles for this template -->
     <link href="checkout.css" rel="stylesheet">
   </head>
   <body class="bg-dark-subtle">
@@ -20,6 +18,11 @@
       <img class="d-block mx-auto mb-4" src="../../../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
       <h2>Cadastro de Funcionário</h2>
     </div>
+    
+    <?php
+      $func_cod = filter_input(INPUT_GET, "id", FILTER_SANITIZE_NUMBER_INT);
+          require_once("atuViewFuncionario.php");
+        ?>  
 
     <div class="row g-5">     
       <div class="col-md-7 col-lg-8">
@@ -37,27 +40,25 @@
 
         <hr class="my-4">
         
-        <?php
-          $pess_cod = filter_input(INPUT_GET, "id", FILTER_SANITIZE_NUMBER_INT);
-          require_once("../view/_view/CadViewPessoabd.php");
-        ?>                  
+                        
 
         <form action="cadFuncionariobd.php" method="POST" class="needs-validation" novalidate> 
           <div class="row g-3">
 
-          <input type="hidden" name="id"  value="<?=$pess_cod;?>" >
+          <input type="hidden" name="id"  value="<?=$func_cod;?>" >
                   
-                        
+          <?php
+            foreach($dados as $linha)
+              {
+          ?>
+
           <div class="col-sm-12">  
             <div class="col-sm-2">
                 <label for="codigo" class="form-label">Código Funcionário</label>
-                <input type="text" class="form-control" id="func_cod" name ="func_cod" value="" disabled>
+                <input type="text" class="form-control" id="func_cod" name ="func_cod" value="<?=$linha['Func_i_cod'];?>" disabled>
               </div>
             </div>
-            <?php
-              foreach($dados as $linha)
-              {
-            ?>
+            
             <div class="col-sm-2">
               <label for="codigo_pes" class="form-label">Código</label>
               <input type="text" class="form-control" id="pess_cod" name ="pess_cod" value="<?=$linha['Pess_i_cod'];?>">
@@ -65,17 +66,8 @@
 
             <div class="col-sm-6">
               <label for="nome_pes" class="form-label">Nome Pessoa</label>
-              <input type="text" class="form-control" id="pess_nome" name ="pess_nome" value="<?=$linha['Pess_a_nome'];?>">
-            </div>  
-
-            <?php
-              } 
-            ?> 
-
-            <div class="col-sm-4">
-              <a class="btn btn-primary" href="../view/_view/CadViewPessoa.php" role="button">Pesquisar</a>
-              <a class="btn btn-primary" href="#" role="button">Cadastrar</a>
-            </div>
+              <input type="text" class="form-control" id="pess_nome" name ="pess_nome" value="<?=$linha['Pess_a_nome'];?>" disabled>
+            </div>              
 
             <div class="form-check">
               <input type="checkbox" class="form-check-input" id="func_prof" name="func_prof" value="T">
@@ -84,20 +76,22 @@
 
             <div class="col-sm-6">
               <label for="login" class="form-label">Login</label>
-              <input type="text" class="form-control" id="func_login" name="func_login" value="">
+              <input type="text" class="form-control" id="func_login" name="func_login" value="<?=$linha['Func_a_login'];?>">
             </div>
 
             <div class="col-sm-6">
               <label for="senha" class="form-label">Senha</label>
-              <input type="password" class="form-control" id="func_senha" name="senha" value="" required>     
+              <input type="password" class="form-control" id="func_senha" name="senha" value="<?=$linha['Func_a_login'];?>"  disabled>     
             </div>                            
             
-            
+          <?php
+            } 
+          ?>   
 
           <hr class="my-4">
 
           <div class="d-grid gap-2 d-md-block">
-            <button class="btn btn-primary col-sm-4" type="submit">Salvar</button>
+            <button class="btn btn-primary col-sm-4" type="submit">Atualizar</button>
             <button class="btn btn-primary col-sm-4" type="reset">Limpar</button>
           </div>
 

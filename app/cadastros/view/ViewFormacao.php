@@ -7,7 +7,7 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.108.0">
     
-    <title>Vizualização de Funcionário</title>
+    <title>Vizualização de Formação</title>
 
     <link href="../../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../checkout.css" rel="stylesheet">
@@ -18,28 +18,28 @@
   <main>
     <div class="py-5 text-center">
       <img class="d-block mx-auto mb-4" src="../../../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-      <h2>Vizualização de Funcionário</h2>
+      <h2>Vizualização de Formação</h2>
     </div>
+
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="../insert/CadFormacao.php">Cadastrar</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../../home.php">Home</a>
+      </li>          
+    </ul> 
+
     <?php 
-      require_once("ViewFuncionariobd.php");
+      require_once("ViewFormacaobd.php");
       if($total > 0){
     ?>
-    <div>
-    <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../insert/CadFuncionario.php">Cadastrar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../../../home.php">Home</a>
-            </li>          
-        </ul> 
-    </div>
     <table class="table table-hover table-light">
       <thead class="table table-hover table-secondary">
         <tr>
           <th scope="col">#</th>
-          <th scope="col">Descrição funcionario</th>
-          <th scope="col">Login</th>
+          <th scope="col">Descrição da Formação</th>
+          <th scope="col">Especialização</th>
           <th width="60">ATU</th>
           <th width="60">EXC</th>
         </tr>
@@ -50,11 +50,11 @@
           {
         ?>
         <tr>
-          <th scope="row"><?=$linha["Func_i_cod"];?></th>          
-          <td><?=$linha["Pess_a_nome"];?></td>  
-          <td><?=$linha["Func_a_login"];?></td>  
-          <td><a href="../update/atuFuncionario.php?id=<?=$linha['Func_i_cod'];?>"><img src="_img/editar2.png" width="32" alt="Atu"></a></td>
-          <td><a href="exc_login.php?id=<?=$linha['Pess_i_cod'];?>"><img src="_img/excluir2.png" width="32" alt="Exc"></a></td>
+          <th scope="row"><?=$linha["Form_i_cod"];?></th>
+          <td><?=$linha["Form_i_descricao"];?></td>
+          <td><?=$linha["Espc_a_descricao"];?></td>
+          <td><a href="../update/atuFormacao.php"><img src="_img/editar2.png" width="32" alt="Atu"></a></td>
+          <td><a href="?id=<?=$linha['Form_i_cod'];?>"><img src="_img/excluir2.png" width="32" alt="Exc"></a></td>
         </tr>
         <?php
           }
@@ -85,6 +85,6 @@
 
     <script src="../../../assets/dist/js/bootstrap.bundle.min.js"></script>
 
-      <script src="../checkout.js"></script>
+      <script src="checkout.js"></script>
   </body>
 </html>

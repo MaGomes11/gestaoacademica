@@ -88,7 +88,7 @@
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
             <li><a href="app/cadastros/view/ViewPessoa.php" class="link-dark d-inline-flex text-decoration-none rounded">Pessoa</a></li>
             <li><a href="app/cadastros/view/ViewFuncionario.php" class="link-dark d-inline-flex text-decoration-none rounded">Funcionário</a></li>
-            <li><a href="app/cadastros/insert/CadFormacao.php" class="link-dark d-inline-flex text-decoration-none rounded">Formação</a></li>
+            <li><a href="app/cadastros/view/ViewFormacao.php" class="link-dark d-inline-flex text-decoration-none rounded">Formação</a></li>
             <li><a href="app/cadastros/insert/CadEspecializacao.php" class="link-dark d-inline-flex text-decoration-none rounded">Especialização</a></li>
           </ul>
         </div>
