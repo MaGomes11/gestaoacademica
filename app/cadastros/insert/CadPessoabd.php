@@ -23,7 +23,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
         $pess_ativo = 0;
     }
 
-    require_once("../_conexao/conexao.php");
+    require_once("../../_conexao/conexao.php");
 
     try{
         $comandoSQL = $conexao->prepare(
@@ -51,6 +51,8 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
         
         if($comandoSQL->rowCount() > 0){
             echo("REGISTRO SALVO COM SUCESSO");
+            header("location:../view/ViewPessoa.php"); 
+            exit();
         }
         else{
             echo("ERRO: NO CADASTRO.");

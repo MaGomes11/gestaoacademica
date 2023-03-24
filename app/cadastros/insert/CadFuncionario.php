@@ -54,7 +54,7 @@
               $pess_cod = filter_input(INPUT_GET, "id", FILTER_SANITIZE_NUMBER_INT);              
 
               if(!empty($pess_cod)){
-                require_once("../update/atuViewPessoa.php");
+                require_once("../update/atuViewPessoaFun.php");
               }
             ?> 
             <?php

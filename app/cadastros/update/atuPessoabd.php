@@ -1,9 +1,9 @@
 <?php
 
-    /* echo "<pre>";
+    /*  echo "<pre>";
     print_r($_POST);
     print_r($_SERVER['REQUEST_METHOD']);
-    echo "</pre>";  */
+    echo "</pre>";  */ 
 
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         $pess_cod = filter_input(INPUT_POST,'id', FILTER_SANITIZE_NUMBER_INT);
@@ -51,7 +51,7 @@
 
         if($comandoSQL->rowCount() > 0){
 
-             header("location:../view/ViewPessoa.php"); 
+            header("location:../view/ViewPessoa.php"); 
             exit();
         }
         else{

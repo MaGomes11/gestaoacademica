@@ -67,8 +67,8 @@
               <label for="sequencial" class="form-label">Sequêncial</label>
               <select class="form-select" id="seme_sequencia" name="seme_sequencia" required>
                <option selected>Selecione</option>
-                <option value= 1>Primeiro</option>                
-                <option value= 2>Segundo</option>                
+                <option value= 1 <?=$ativar=$linha['Seme_i_sequencia']==1?'selected':'';?>>Primeiro</option>                
+                <option value= 2  <?=$ativar=$linha['Seme_i_sequencia']==2?'selected':'';?>>Segundo</option>                
               </select>            
             </div>
             
