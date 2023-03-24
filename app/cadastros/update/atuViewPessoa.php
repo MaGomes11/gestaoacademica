@@ -7,7 +7,7 @@
 
         $selecao = $conexao->query($comandoSQL);
 
-        $dados = $selecao->fetchAll(PDO::FETCH_ASSOC);
+        $dados = $selecao->fetch(PDO::FETCH_ASSOC);
 
         $total = $selecao->rowCount();
         

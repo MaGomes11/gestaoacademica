@@ -8,7 +8,6 @@
 
     <link href="../../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    
     <!-- Custom styles for this template -->
     <link href="checkout.css" rel="stylesheet">
   </head>
@@ -52,30 +51,49 @@
               </div>
             </div>
             <?php
-              $pess_cod = filter_input(INPUT_GET, "id", FILTER_SANITIZE_NUMBER_INT);
-              require_once("../update/atuViewPessoa.php");
+              $pess_cod = filter_input(INPUT_GET, "id", FILTER_SANITIZE_NUMBER_INT);              
+
+              if(!empty($pess_cod)){
+                require_once("../update/atuViewPessoa.php");
+              }
             ?> 
             <?php
-              foreach($dados as $linha)
+              if(!empty($pess_cod))
               {
             ?>
             <div class="col-sm-2">
               <label for="codigo_pes" class="form-label">Código</label>
-              <input type="text" class="form-control" id="pess_cod" name ="pess_cod" value="<?=$linha['Pess_i_cod'];?>">
+              <input type="text" class="form-control" id="pess_cod" name ="pess_cod" value="<?=$dados['Pess_i_cod'];?>">
             </div>
 
             <div class="col-sm-6">
               <label for="nome_pes" class="form-label">Nome Pessoa</label>
-              <input type="text" class="form-control" id="pess_nome" name ="pess_nome" value="<?=$linha['Pess_a_nome'];?>" required>
+              <input type="text" class="form-control" id="pess_nome" name ="pess_nome" value="<?=$dados['Pess_a_nome'];?>" required>
+            </div>  
+
+            <?php
+              } else {
+
+            ?> 
+
+            <div class="col-sm-2">
+              <label for="codigo_pes" class="form-label">Código</label>
+              <input type="text" class="form-control" id="pess_cod" name ="pess_cod" value="">
+            </div>
+
+            <div class="col-sm-6">
+              <label for="nome_pes" class="form-label">Nome Pessoa</label>
+              <input type="text" class="form-control" id="pess_nome" name ="pess_nome" value="" disabled required>
             </div>  
 
             <?php
               } 
+
             ?> 
 
-           <div class="col-sm-4">
-              <a class="btn btn-primary" href="../view/_view/CadViewPessoa.php" role="button">Pesquisar</a>
-              <a class="btn btn-primary" href="#" role="button">Cadastrar</a>
+            <div class="col-sm-4 d-flex justify-content-evenly align-items-end">
+                <a class="btn btn-primary" href="../view/_view/CadViewPessoa.php" role="button">Pesquisar</a>
+                <a class="btn btn-primary" href="#" role="button">Cadastrar</a>              
             </div>
 
             <div class="form-check">
