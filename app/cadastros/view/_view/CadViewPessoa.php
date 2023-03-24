@@ -40,7 +40,7 @@
           <th scope="col">CPF</th>
           <th scope="col">RG</th>
           <th scope="col">Celular</th>
-          <th width="60"></th>
+          <th width="60">ATU</th>
         </tr>
       </thead>
       <tbody>
@@ -64,9 +64,8 @@
     </table>
     <?php
       }
-      else
-      {
-      echo "<h1 class='titulo'>Não há usuários cadastrados!</h1>";
+      else {
+        echo "<h1 class='titulo'>Não há usuários cadastrados!</h1>";
       }
     ?>
 
