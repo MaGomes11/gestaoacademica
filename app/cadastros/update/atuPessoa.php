@@ -91,9 +91,9 @@
               <label for="genero" class="form-label">Sexo</label>
               <select class="form-select" id="pess_genero" name="pess_genero" aria-label="Default select example">
                 <option selected>Selecione</option>
-                <option value="M">Masculino</option>
-                <option value="F">Feminino</option>
-                <option value="O">Outros</option>
+                <option value="M" <?=$ativar=$linha['Pess_a_genero']=='M'?'selected':'';?>>Masculino</option>
+                <option value="F" <?=$ativar=$linha['Pess_a_genero']=='F'?'selected':'';?>>Feminino</option>
+                <option value="O" <?=$ativar=$linha['Pess_a_genero']=='O'?'selected':'';?>>Outros</option>
               </select>  
             </div>
 
@@ -165,32 +165,32 @@
               <label for="estado" class="form-label">Estado</label>
               <select class="form-select" id="pess_estado" name="pess_estado" required>
                <option selected>Selecione</option>
-                <option value="SP">São Paulo</option>
-                <option value="AC">Acre</option>
-                <option value="AL">Alagoas</option>
-                <option value="AP">Amapá</option>
-                <option value="AM">Amazonas</option>
-                <option value="BA">Bahia</option>
-                <option value="DF">Distrito Federal</option>
-                <option value="ES">Espírito Santo</option>
-                <option value="GO">Goiás</option>
-                <option value="MA">Maranhão</option>
-                <option value="MT">Mato Grosso</option>
-                <option value="MS">Mato Grosso do Sul</option>
-                <option value="MG">Minas Gerais</option>
-                <option value="PA">Pará</option>
-                <option value="PB">Paraíba</option>
-                <option value="PR">Paraná</option>
-                <option value="PE">Pernambuco</option>
-                <option value="PI">Piauí</option>
-                <option value="RJ">Rio de Janeiro</option>
-                <option value="RN">Rio Grande do Norte</option>
-                <option value="RS">Rio Grande do Sul</option>
-                <option value="RO">Rondônia</option>
-                <option value="RR">Roraima</option>
-                <option value="SC">Santa Catarina</option>                
-                <option value="SE">Sergipe</option>
-                <option value="TO">Tocantins</option>
+                <option value="SP" <?=$ativar=$linha['Pess_a_estado']=='SP'?'selected':'';?>>São Paulo</option>
+                <option value="AC" <?=$ativar=$linha['Pess_a_estado']=='AC'?'selected':'';?>>Acre</option>
+                <option value="AL" <?=$ativar=$linha['Pess_a_estado']=='AL'?'selected':'';?>>Alagoas</option>
+                <option value="AP" <?=$ativar=$linha['Pess_a_estado']=='AP'?'selected':'';?>>Amapá</option>
+                <option value="AM" <?=$ativar=$linha['Pess_a_estado']=='AM'?'selected':'';?>>Amazonas</option>
+                <option value="BA" <?=$ativar=$linha['Pess_a_estado']=='BA'?'selected':'';?>>Bahia</option>
+                <option value="DF" <?=$ativar=$linha['Pess_a_estado']=='DF'?'selected':'';?>>Distrito Federal</option>
+                <option value="ES" <?=$ativar=$linha['Pess_a_estado']=='ES'?'selected':'';?>>Espírito Santo</option>
+                <option value="GO" <?=$ativar=$linha['Pess_a_estado']=='GO'?'selected':'';?>>Goiás</option>
+                <option value="MA" <?=$ativar=$linha['Pess_a_estado']=='MA'?'selected':'';?>>Maranhão</option>
+                <option value="MT" <?=$ativar=$linha['Pess_a_estado']=='MT'?'selected':'';?>>Mato Grosso</option>
+                <option value="MS" <?=$ativar=$linha['Pess_a_estado']=='MS'?'selected':'';?>>Mato Grosso do Sul</option>
+                <option value="MG" <?=$ativar=$linha['Pess_a_estado']=='MG'?'selected':'';?>>Minas Gerais</option>
+                <option value="PA" <?=$ativar=$linha['Pess_a_estado']=='PA'?'selected':'';?>>Pará</option>
+                <option value="PB" <?=$ativar=$linha['Pess_a_estado']=='PB'?'selected':'';?>>Paraíba</option>
+                <option value="PR" <?=$ativar=$linha['Pess_a_estado']=='PR'?'selected':'';?>>Paraná</option>
+                <option value="PE" <?=$ativar=$linha['Pess_a_estado']=='PE'?'selected':'';?>>Pernambuco</option>
+                <option value="PI" <?=$ativar=$linha['Pess_a_estado']=='PI'?'selected':'';?>>Piauí</option>
+                <option value="RJ" <?=$ativar=$linha['Pess_a_estado']=='RJ'?'selected':'';?>>Rio de Janeiro</option>
+                <option value="RN" <?=$ativar=$linha['Pess_a_estado']=='RN'?'selected':'';?>>Rio Grande do Norte</option>
+                <option value="RS" <?=$ativar=$linha['Pess_a_estado']=='RS'?'selected':'';?>>Rio Grande do Sul</option>
+                <option value="RO" <?=$ativar=$linha['Pess_a_estado']=='RO'?'selected':'';?>>Rondônia</option>
+                <option value="RR" <?=$ativar=$linha['Pess_a_estado']=='RR'?'selected':'';?>>Roraima</option>
+                <option value="SC" <?=$ativar=$linha['Pess_a_estado']=='SC'?'selected':'';?>>Santa Catarina</option>                
+                <option value="SE" <?=$ativar=$linha['Pess_a_estado']=='SE'?'selected':'';?>>Sergipe</option>
+                <option value="TO" <?=$ativar=$linha['Pess_a_estado']=='TO'?'selected':'';?>>Tocantins</option>
               </select>            
             </div>
 
