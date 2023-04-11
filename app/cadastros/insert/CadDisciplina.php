@@ -9,7 +9,7 @@
     <title>Cadastro de Disciplina</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/checkout/">
-    <link href="../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -63,18 +63,14 @@
         -webkit-overflow-scrolling: touch;
       }
     </style>
-    
 
-    
-    <!-- Custom styles for this template -->
-    <link href="checkout.css" rel="stylesheet">
   </head>
   <body class="bg-dark-subtle">
     
 <div class="container">
   <main>
     <div class="py-5 text-center">
-      <img class="d-block mx-auto mb-4" src="../../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+      <img class="d-block mx-auto mb-4" src="../../../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
       <h2>Cadastro de Disciplina</h2>
     </div>
 
@@ -132,8 +128,8 @@
 </div>
 
 
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../assets/dist/js/bootstrap.bundle.min.js"></script>
 
-      <script src="checkout.js"></script>
+      <script src="../checkout.js"></script>
   </body>
 </html>

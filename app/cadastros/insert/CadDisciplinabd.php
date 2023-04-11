@@ -3,9 +3,9 @@
     if($_SERVER['REQUEST_METHOD']=='POST')
     { 
         $disc_ativo = filter_input(INPUT_POST,'disc_ativo', FILTER_SANITIZE_FULL_SPECIAL_CHARS); 
-        $disc_descricao = filter_input(INPUT_POST,'curs_descricao', FILTER_SANITIZE_FULL_SPECIAL_CHARS); 
+        $disc_descricao = filter_input(INPUT_POST,'disc_descricao', FILTER_SANITIZE_FULL_SPECIAL_CHARS); 
 
-        require_once("../_conexao/conexao.php");
+        require_once("../../_conexao/conexao.php");
 
         if ($disc_ativo == null){
             $disc_ativo = 'F';
@@ -23,6 +23,7 @@
 
             if($comandoSQL->rowCount() > 0){
                 echo("REGISTRO SALVO COM SUCESSO");
+                header('location: ../view/ViewDisciplina.php'); 
             }
             else{
                 echo("ERRO: NO CADASTRO.");
