@@ -74,10 +74,21 @@
       <h2>Cadastro de Disciplina</h2>
     </div>
 
+    <div class="row col-sm-8"> 
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="../view/ViewDisciplina.php">Vizualizar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../../home.php">Home</a>
+        </li>
+      </ul>
+    </div>
+
     <div class="row g-5">     
       <div class="col-md-7 col-lg-8">
 
-        <h6 class="mb-3">Dados do Disciplina</h6>
+        <h6 class="mb-3">Dados da Disciplina</h6>
         <hr class="my-4">
                     
 

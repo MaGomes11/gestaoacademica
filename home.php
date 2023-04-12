@@ -102,8 +102,8 @@
             <li><a href="app/cadastros/insert/CadSemestre.php" class="link-dark d-inline-flex text-decoration-none rounded">Matricula</a></li>
             <li><a href="app/cadastros/view/ViewSemestre.php" class="link-dark d-inline-flex text-decoration-none rounded">Semestre</a></li>
             <li><a href="app/cadastros/view/ViewCurso.php" class="link-dark d-inline-flex text-decoration-none rounded">Curso</a></li>
-            <li><a href="app/cadastros/insert/CadDisciplina.php" class="link-dark d-inline-flex text-decoration-none rounded">Disciplina</a></li>
-            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Annually</a></li>
+            <li><a href="app/cadastros/view/ViewDisciplina.php" class="link-dark d-inline-flex text-decoration-none rounded">Disciplina</a></li>
+            <li><a href="app/cadastros/view/ViewDisciplina.php" class="link-dark d-inline-flex text-decoration-none rounded">Annually</a></li>
           </ul>
         </div>
       </li>

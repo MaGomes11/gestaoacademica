@@ -54,7 +54,7 @@
         <tr>
           <th scope="row"><?=$linha["Disc_i_cod"];?></th>
           <td><?=$linha["Disc_a_descricao"];?></td>
-          <td><a class="fas fa-edit fa-lg text-info" href="atu_login.php?id=<?=$linha['Disc_i_cod'];?>"></a></td>
+          <td><a class="fas fa-edit fa-lg text-info" href="../update/AtuDisciplina.php?id=<?=$linha['Disc_i_cod'];?>"></a></td>
           <td><a class="fas fa-trash-alt fa-lg text-danger" href="exc_login.php?id=<?=$linha['Disc_i_cod'];?>"></a></td>									
         </tr>
         <?php
