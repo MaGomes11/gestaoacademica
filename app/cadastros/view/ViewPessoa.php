@@ -8,13 +8,21 @@
     <meta name="generator" content="Hugo 0.108.0">
     
     <title>Vizualização de Pessoas</title>
-
+    
     <link href="../../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../checkout.css" rel="stylesheet">
     <link href="../../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../checkout.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <script>
+      function remover(id){
+				location.href = '../delete/delPessoa.php?id='+id;
+
+			}
+    </script>  
+
   </head>
   <body class="bg-dark-subtle">
     

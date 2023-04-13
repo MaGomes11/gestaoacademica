@@ -1,4 +1,8 @@
 <?php
+    echo "<pre>";
+    print_r($_POST);
+    print_r($_SERVER['REQUEST_METHOD']);
+    echo "</pre>";
 
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         $form_cod = filter_input(INPUT_POST,'id', FILTER_SANITIZE_NUMBER_INT);
