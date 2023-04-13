@@ -58,7 +58,7 @@
           <td><?=$linha["Pess_a_nome"];?></td>  
           <td><?=$linha["Func_a_login"];?></td>  
           <td><a class="fas fa-edit fa-lg text-info" href="../update/atuFuncionario.php?id=<?=$linha['Func_i_cod'];?>"></a></td>
-          <td><a class="fas fa-trash-alt fa-lg text-danger" href="exc_login.php?id=<?=$linha['Pess_i_cod'];?>"></a></td>
+          <td><a class="fas fa-trash-alt fa-lg text-danger" href="../delete/delFuncionario.php?id=<?=$linha['Func_i_cod'];?>"></a></td>
         </tr>
         <?php
           }
