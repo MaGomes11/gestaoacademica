@@ -11,6 +11,10 @@
 
     <link href="../../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../checkout.css" rel="stylesheet">
+    <link href="../../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../checkout.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   </head>
   <body class="bg-dark-subtle">
     
@@ -53,8 +57,8 @@
           <th scope="row"><?=$linha["Func_i_cod"];?></th>          
           <td><?=$linha["Pess_a_nome"];?></td>  
           <td><?=$linha["Func_a_login"];?></td>  
-          <td><a href="../update/atuFuncionario.php?id=<?=$linha['Func_i_cod'];?>"><img src="_img/editar2.png" width="32" alt="Atu"></a></td>
-          <td><a href="exc_login.php?id=<?=$linha['Pess_i_cod'];?>"><img src="_img/excluir2.png" width="32" alt="Exc"></a></td>
+          <td><a class="fas fa-edit fa-lg text-info" href="../update/atuFuncionario.php?id=<?=$linha['Func_i_cod'];?>"></a></td>
+          <td><a class="fas fa-trash-alt fa-lg text-danger" href="exc_login.php?id=<?=$linha['Pess_i_cod'];?>"></a></td>
         </tr>
         <?php
           }
