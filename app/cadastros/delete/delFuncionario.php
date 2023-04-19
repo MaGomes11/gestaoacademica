@@ -28,7 +28,7 @@
             exit();
         }
         else{
-            echo("ERRO NA ATUALIZACAO");       
+            echo("ERRO NA ATUALIZACAO");
         }
 
     }
