@@ -81,7 +81,7 @@
               <input type="text" class="form-control" id="pess_cod" name ="pess_cod" value="">
             </div>
 
-            <div class="col-sm-8">
+            <div class="col-sm-6">
               <label for="nome_pes" class="form-label">Nome Pessoa</label>
               <input type="text" class="form-control" id="pess_nome" name ="pess_nome" value="" disabled required>
             </div>  

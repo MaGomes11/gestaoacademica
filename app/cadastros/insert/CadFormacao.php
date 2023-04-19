@@ -92,35 +92,25 @@
 
         <hr class="my-4">
 
-        <form class="needs-validation" novalidate> <!-- action="cad_Pessoabd.php" method="POST -->
+        <form action="cadFormacaobd.php" method="POST" class="needs-validation" novalidate> <!-- action="cad_Pessoabd.php" method="POST -->
           <div class="row g-3">
 
           <div class="col-sm-3">
-              <label for="codigo" class="form-label">Código</label>
-              <input type="text" class="form-control" id="codigo" name ="codigo" value="" disabled>
+              <label for="form_cod" class="form-label">Código</label>
+              <input type="text" class="form-control" id="form_cod" name ="form_cod" value="" disabled>
             </div>
             
             <div class="col-sm-9">
-              <label for="descForm" class="form-label">Descrição da Formação</label>
-              <input type="text" class="form-control" id="descForm" name ="descForm" value="" required>
+              <label for="form_descricao" class="form-label">Descrição da Formação</label>
+              <input type="text" class="form-control" id="form_descricao" name ="form_descricao" value="" required>
               <div class="invalid-feedback">
                 Favor inserir a Descrição da Formação.
               </div>
             </div>
 
-            <h6 class="mb-3">Dados Especialização</h6>
-
-            <div class="col-sm-3">
-              <label for="codEsp" class="form-label">Código</label>
-              <input type="text" class="form-control" id="codEsp" name="codEsp" placeholder="" value="" required>
-              <div class="invalid-feedback">
-                Favor inserir o código.
-              </div>
-            </div>
-
             <div class="col-sm-9">
-              <label for="descEsp" class="form-label">Descrição da Especialização</label>
-              <input type="text" class="form-control" id="descEsp" name="descEsp" value="" required>
+              <label for="form_especial" class="form-label">Descrição da Especialização</label>
+              <input type="text" class="form-control" id="form_especial" name="form_especial" value="" required>
               <div class="invalid-feedback">
                 Favor inserir a Descrição da Especialização.
               </div>
