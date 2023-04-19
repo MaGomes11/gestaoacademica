@@ -26,11 +26,10 @@
 
         try{
             $comandoSQL = $conexao->prepare(
-                "INSERT INTO funcionario (Func_i_cod, Pess_i_cod, Func_a_prof, Func_a_login, Func_a_senha)     
-                    VALUES (:func_cod, :pess_cod, :func_prof, :func_login, :func_senha)");         
+                "INSERT INTO funcionario (Pess_i_cod, Func_a_prof, Func_a_login, Func_a_senha)     
+                    VALUES (:pess_cod, :func_prof, :func_login, :func_senha)");         
 
             $comandoSQL->execute(array(
-                ':func_cod'   => $func_cod,
                 ':pess_cod'   => $pess_cod,
                 ':func_prof'  => $func_prof,
                 ':func_login' => $func_login,
@@ -39,6 +38,8 @@
 
             if($comandoSQL->rowCount() > 0){
                 echo("REGISTRO SALVO COM SUCESSO");
+                header("location:../view/ViewFuncionario.php"); 
+                exit();
             }
             else{
                 echo("ERRO: NO CADASTRO.");

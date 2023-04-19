@@ -24,10 +24,7 @@
       <img class="d-block mx-auto mb-4" src="../../../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
       <h2>Vizualização de Funcionário</h2>
     </div>
-    <?php 
-      require_once("ViewFuncionariobd.php");
-      if($total > 0){
-    ?>
+    
     <div>
     <ul class="nav justify-content-end">
             <li class="nav-item">
@@ -38,6 +35,10 @@
             </li>          
         </ul> 
     </div>
+    <?php 
+      require_once("ViewFuncionariobd.php");
+      if($total > 0){
+    ?>
     <table class="table table-hover table-light">
       <thead class="table table-hover table-secondary">
         <tr>
