@@ -3,7 +3,7 @@
 
     try{
         
-        $comandoSQL = "SELECT formacao.Form_i_cod, formacao.Form_i_descricao, especializacao.Espc_a_descricao FROM `formacao` left JOIN `especializacao` ON especializacao.Espc_i_cod = formacao.Espc_i_cod";
+        $comandoSQL = "SELECT `Form_i_cod`, `Form_i_descricao`, `Form_a_especial` FROM `formacao` WHERE 1";
 
         $selecao = $conexao->query($comandoSQL);
 

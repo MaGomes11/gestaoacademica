@@ -65,19 +65,9 @@
               </div>
             </div>
 
-            <h6 class="mb-3">Dados Especialização</h6>
-
-            <div class="col-sm-3">
-              <label for="codEsp" class="form-label">Código</label>
-              <input type="text" class="form-control" id="espc_cod" name="espc_cod" placeholder="" value="<?=$linha['Espc_i_cod'];?>" required>
-              <div class="invalid-feedback">
-                Favor inserir o código.
-              </div>
-            </div>
-
             <div class="col-sm-9">
-              <label for="descEsp" class="form-label">Descrição da Especialização</label>
-              <input type="text" class="form-control" id="descEsp" name="descEsp" value="<?=$linha['Espc_a_descricao'];?>" disabled>
+              <label for="form_especial" class="form-label">Descrição da Especialização</label>
+              <input type="text" class="form-control" id="form_especial" name="form_especial" value="<?=$linha['Form_a_especial'];?>" >
               <div class="invalid-feedback">
                 Favor inserir a Descrição da Especialização.
               </div>

@@ -56,7 +56,7 @@
         <tr>
           <th scope="row"><?=$linha["Form_i_cod"];?></th>
           <td><?=$linha["Form_i_descricao"];?></td>
-          <td><?=$linha["Espc_a_descricao"];?></td>
+          <td><?=$linha["Form_a_especial"];?></td>
           <td><a class="fas fa-edit fa-lg text-info" href="../update/atuFormacao.php?id=<?=$linha['Form_i_cod'];?>"></a></td>
           <td><a class="fas fa-trash-alt fa-lg text-danger" href="?id=<?=$linha['Form_i_cod'];?>"></a></td>
         </tr>
